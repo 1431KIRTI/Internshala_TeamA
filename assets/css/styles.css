@@ -1,0 +1,476 @@
+body {
+    background-color: white;
+}
+
+/* Navbar General Styling */
+.navbar-brand img {
+    height: 60px;
+    width: 190px;
+}
+
+/* Adjust spacing between dropdown items in the navbar */
+.navbar-nav .nav-item {
+    margin-right: 30px; /* Adjust the margin as needed to increase the distance */
+}
+
+
+.navbar-nav .nav-link {
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Show dropdown on hover */
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Ensure dropdown menu is hidden by default */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
+
+.sub-menu{
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.col-3 .dropdown-item:hover + .col-9 .sub-menu{
+    display: block;
+}
+ /* Ensure only the corresponding sub-menu is shown */
+ .col-3 .dropdown-item:hover ~ .col-9 #popular,
+ .col-3 .dropdown-item:hover ~ .col-9 #programming,
+ .col-3 .dropdown-item:hover ~ .col-9 #buisness {
+   display: none;
+ }
+ 
+ .col-3 .dropdown-item:hover ~ .col-9 .sub-menu#popular,
+ .col-3 .dropdown-item:hover ~ .col-9 .sub-menu#programming,
+ .col-3 .dropdown-item:hover ~ .col-9 .sub-menu#buisness {
+   display: block;
+ }
+.sub-menu li{
+    border-left: 2px solid #B0E2FF;
+    padding: 1px 0;
+}
+
+.sub-menu li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.sub-menu li a:hover{
+    color: #007bff;
+}
+
+/* Basic styling for dropdown items */
+.col-3 .dropdown-item {
+    position: relative;
+    display: block;
+    width: calc(100% + 25px); /* Slightly larger width for the hover effect */
+    padding: 10px 20px 10px 30px; /* Add padding for spacing */
+    color: #000;
+    background-color: transparent;
+    text-align: left;
+    border: none;
+}
+
+.navbar-nav .dropdown-menu {
+    border-radius: 10px;
+    background-color: #ffffff;
+    min-width: 800px;
+}
+
+/* Hover effect with dark sky blue on the left and light sky blue on the remaining part */
+.col-3 .dropdown-item:hover {
+    background: linear-gradient(to right, #87CEEB 30%, #B0E2FF 70%); /* Dark sky blue (#87CEEB) and light sky blue (#B0E2FF) */
+    color: black; /* White text */
+}
+
+/* Add the > sign on the right side */
+.col-3 .dropdown-item:hover::after {
+    content: '>';
+    position: absolute;
+    right: 10px;
+    color: black; /* White color for the arrow */
+    font-weight: bold;
+}
+
+.mega-menu .dropdown-item {
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+/* Styles for the entire Placement Guarantee Courses dropdown menu */
+#placementCoursesDropdown + .dropdown-menu.mega-menu {
+    width: 500px; /* Adjust the width of the dropdown menu */
+    min-width: auto;
+    overflow-y: auto; /* Allows scrolling if content exceeds max height */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for depth */
+}
+
+/* Specific styles for Placement Guarantee Courses dropdown */
+#placementCoursesDropdown + .dropdown-menu.mega-menu li a.dropdown-item {
+    font-size: large;
+    display: block;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Specific styles for Placement Guarantee Courses dropdown */
+#placementCoursesDropdown + .dropdown-menu.mega-menu li a.dropdown-item:hover {
+    background: linear-gradient(to right, #B0E2FF 30%, #87CEEB 70%); /* Dark sky blue (#87CEEB) and light sky blue (#B0E2FF) */
+    color: #007bff; /* Change text color on hover */
+    display: block;
+}
+
+.dropdown-icon {
+    height: 16px; /* Make the icon smaller */
+    width: 16px;
+    margin-right: 10px;
+    object-fit: contain; /* Ensure the logo doesn't get distorted */
+}
+
+/* Badge Styling */
+.badge {
+    font-size: 12px;
+}
+
+/* Login Button */
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-success:hover {
+    color: white;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+/* Login Modal Styling */
+.modal-content {
+    border-radius: 0;
+    border: 1px solid #ddd;
+}
+
+
+/* Header Section Background */
+.header-section {
+    background: radial-gradient(70.31% 230.67% at 70.31% 49.89%, #0f96b4 0, #5a0b99 100%);
+    padding: 50px 0;
+    color: white;
+}
+
+/* Text Section */
+.text-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: -100px;
+}
+
+.text-section h3 {
+    font-weight: bold;
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 6px;
+    cursor: text;
+}
+
+/* Wrapper for Buttons and Text */
+.custom-btn-wrapper {
+    margin-top: -170px;
+    margin-left: 20px; /* Adds left margin to the buttons */
+    text-align: center;
+}
+
+/* Custom Button Styles */
+.custom-btn {
+    font-weight: 700;
+    position: relative;
+    background: rgba(255, 255, 255, 0.136);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-block;
+    border: none; /* Ensure there's no border */
+    cursor: text; /* Ensure the cursor stays as a text line */
+}
+
+/* Disable hover effects on the button */
+.custom-btn:hover {
+    background: rgba(255, 255, 255, 0.136); /* Keeps the same background on hover */
+    color: white; /* Keeps the text color the same on hover */
+    cursor: text; /* Keeps the cursor as a text line */
+}
+
+/* Image Section */
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/*Top career options in UI/UX Design*/
+h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card-img-top {
+    width: 100px;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.card-body {
+    padding: 1rem; 
+}
+
+#ui-uxdes1, #ui-uxdes2 {
+    font-weight: bold;
+}
+
+.large-img {
+    width: 80%;
+    max-width: 90%; /* Ensure it doesn't exceed container width */
+    height: auto;
+}
+
+.col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Card styling for the Career Options section */
+.career-options .card {
+    margin-bottom: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Card styling for the Explore More section */
+.explore-more-card {
+    border: 2px solid white; /* White borders for the Explore More section */
+    margin-bottom: 0;
+    position: relative;
+}
+.explore-more-middle-border {
+    border-left: 1px solid rgb(186, 184, 184); /* Set a black left border for the middle card */
+    padding-left: 20px; /* Add padding to make space for border */
+    margin-left: -10px; /* Adjust this value to move the border left */
+    margin-right: 10px; /* Adjust this value to provide space on the right */
+}
+
+/* Lightbox modal style */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 10px; /* Padding at the top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    /* Remove the background and padding */
+}
+
+.lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: -45px; /* Move the close button higher */
+    right: -20px; /* Move the close button further right */
+    color: white;
+    font-size: 35px; /* Increased size */
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+.explore-more-heading {
+    margin-top: 60px; /* Adjust this value to your preference */
+}
+/* Styling for the Key Benefits section */
+.benefit-item {
+background-color: white; /* Light background for each item */
+padding: 4px; /* Adjusted padding to reduce space inside the items */
+display: flex;
+align-items:left;
+row-gap: -30px;
+margin-bottom: 10px; /* Reduced bottom margin between items */
+}
+
+.benefit-text {
+margin: 0;
+font-size: 16px;
+font-weight: 500;
+}
+
+.benefit-img {
+width: 40px; /* Adjust the size of the images as needed */
+height: auto;
+margin-right: 10px; /* Space between image and text */
+}
+.download-section {
+margin-top: 5px;
+text-align: left; /* Align content to the left */
+}
+
+.download-btn {
+display: inline-flex;
+align-items: center;
+background-color: white;
+color: #4a90e2;
+border: 2px solid #4a90e2;
+border-radius: 5px;
+padding: 5px 10px;
+font-size: 16px;
+text-decoration: none; /* Removes underline */
+cursor: pointer;
+}
+.download-text {
+font-weight: 500; /* Set a lighter weight than bold */
+}
+
+.download-btn i {
+margin-left: 10px; /* Space between text and icon */
+font-size: 16px;
+}
+
+.download-btn:hover {
+box-shadow: 0 px 5px rgba(0, 0, 0, 0.705);
+}
+
+.download-btn:focus {
+outline: none; /* Remove default outline */
+}
+
+/* Form styling */
+.overlay {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 999; /* Just below the form */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.form-container {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 400px;
+background-color: white;
+border: 2px solid #ccc;
+border-radius: 10px;
+padding: 20px;
+z-index: 1000; /* Higher than overlay */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-content {
+position: relative;
+}
+
+.form-heading {
+text-align: left; /* Align heading to the left */
+margin-bottom: 20px;
+font-weight: 600;
+}
+
+.form-close-btn {
+position: absolute;
+top: -10px; /* Move closer to the top */
+right: 10px;
+color: black;
+font-size: 30px;
+font-weight: bold;
+cursor: pointer;
+}
+.custom-btn {
+background-color: #4a90e2; /* Custom color */
+color: white; /* Text color */
+border: none; /* Remove border */
+padding:5px;
+}
+
+/* ai tools start */
+
+#ai_tools {
+    position: relative;
+    margin: 40px auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: transparent; /* No background color needed here */
+    border-radius: 10px;
+  }
+  .background-hg {
+    background: #e7f6ff;
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px; /* To match the rounded corners of the card */
+  }
+  .section-content {
+    margin: 10px auto;
+    padding: 30px;
+    background-color: #ffffff; /* Light blue card background */
+    border-radius: 10px;
+    border: 1px solid #cae7ff;    
+  }
+  .tools-list .tool {
+    display: flex;
+    align-items: start;
+    margin-bottom: 15px;
+  }
+  .tools-list .tool .fa-circle-check {
+    font-size: 18px;
+    margin-right: 20px;
+    margin-top: 3px;
+  }
+  .tools-list .tool .description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+/* ai tools end */
