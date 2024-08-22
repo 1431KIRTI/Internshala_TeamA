@@ -474,3 +474,53 @@ padding:5px;
     line-height: 1.5;
   }
 /* ai tools end */
+/* skills start */
+#skills_you_learn{
+    position: relative;
+    margin: 40px auto;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    background-color: transparent; /* No background color needed here */
+    border-radius: 10px;
+}
+.key-highlights-wrapper {
+    padding-top: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.highlights-container {
+    width: calc(33% - 20px); /* Adjust width to ensure equal sizes */
+    border: 1px solid #cae7ff;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.highlights-container:hover {
+    transform: translateY(-5px);
+}
+
+.highlights-child {
+    display: flex;
+    align-items: center; /* Vertically center the image and content */
+}
+
+.highlights-image {
+    margin-right: 10px;
+}
+
+.highlights-image img {
+    width: 40px;
+    height: 40px;
+}
+
+.highlights-content {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+/* skills end */
