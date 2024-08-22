@@ -8,8 +8,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
@@ -265,12 +267,185 @@
             </div>
         </div>
     </div>
-    
+    <div class="container mt-5">
+      <!-- Heading -->
+      <h2 class="mb-3">Top Career Options in UI/UX Design</h2>
+
+      <!-- Cards Row -->
+      <div class="row row-cols-1 row-cols-md-4 g-4 mt-3 career-options">
+          <!-- Card 1 -->
+          <div class="col">
+              <div class="card h-100">
+                  <img src="https://training-uploads.internshala.com/ui-ux-specialization/ux-designer.png.webp" class="card-img-top" alt="UX Designer">
+                  <div class="card-body">
+                      <h6 class="card-title">User Experience (UX) Designer</h6>
+                      <p class="card-text">A mix of design, analysis, and empathy in a job role. They ensure that the user is able to use a product easily.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col">
+              <div class="card h-100">
+                  <img src="https://training-uploads.internshala.com/ui-ux-specialization/ui-designer.png.webp" class="card-img-top" alt="UI Designer">
+                  <div class="card-body">
+                      <h6 class="card-title">User Interface (UI) Designer</h6>
+                      <p class="card-text">Design visual experience of an app or website in such a way that the user can accomplish their goal easily.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col">
+              <div class="card h-100">
+                  <img src="https://training-uploads.internshala.com/ui-ux-specialization/product-designer.png.webp" class="card-img-top" alt="Product Designer">
+                  <div class="card-body">
+                      <h6 class="card-title">Product Designer</h6>
+                      <p class="card-text">Work with various teams to make a user-friendly, cost-effective product that meets company goals.</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col">
+              <div class="card h-100">
+                  <img src="https://training-uploads.internshala.com/ui-ux-specialization/ux-researcher.png.webp" class="card-img-top" alt="UX Researcher">
+                  <div class="card-body">
+                      <h6 class="card-title">UX Researcher</h6>
+                      <p class="card-text">Interact with users and gain insights to improve the product and drive business goals.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Explore More About UI/UX Design -->
+      <div class="mt-5" >
+          <h2 class="mb-4 explore-more-heading">Explore More About UI/UX Design</h2>
+          <div class="row">
+              <!-- Container 1 -->
+              <div class="col-md-6 mb-4">
+                  <div class="card h-100 explore-more-card">
+                      <div class="card-body">
+                          <h5 id="ui-uxdes1" class="card-title">Internshala Trainings certificate</h5>
+                          <p class="card-text">Upon successful completion of the program, you will receive a UI/UX Design Placement Guarantee Course certificate from Internshala.</p>
+                      </div>
+                      <img src="https://training-uploads.internshala.com/ui-ux-specialization/ist-certificate.png.webp" class="card-img-top large-img lightbox-trigger" alt="Example Image 1">
+                  </div>
+              </div>
+
+              <!-- Container 2 -->
+              <div class="col-md-6 mb-4">
+                  <div class="card h-100 explore-more-card explore-more-middle-border">
+                      <div class="card-body">
+                          <h5 id="ui-uxdes2" class="card-title">NSDC & Skill India certificate</h5>
+                          <p class="card-text">Also, receive a certificate from NSDC (National Skill Development Corporation) and Skill India.</p>
+                      </div>
+                      <img src="https://training-uploads.internshala.com/signup_common/certificate-hero-nsdc.png.webp" class="card-img-top large-img lightbox-trigger" alt="Example Image 2">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+      <div class="lightbox-content">
+          <span class="close-btn" onclick="closeLightbox()">&times;</span>
+          <img id="lightbox-img" src="" alt="Expanded Image">
+      </div>
+  </div>
+  <!------------UI/UX Design Placement Guarantee Course Details------------>
+  <div class="container mt-5">
+      <h2 class="mb-3">Top Career Options in UI/UX Design</h2>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+          <!-- Point 1 -->
+          <div class="col">
+              <div class="benefit-item d-flex align-items-center">
+                  <img src="https://training-uploads.internshala.com/jos_common/videos.png.webp?v=1" alt="200 hours of learning" class="benefit-img me-3">
+                  <p class="benefit-text">200 hours of learning</p>
+              </div>
+          </div>
+  
+          <!-- Point 2 -->
+          <div class="col">
+              <div class="benefit-item d-flex align-items-center">
+                  <img src="https://training-uploads.internshala.com/jos_common/courses.png.webp" alt="6 courses" class="benefit-img me-3">
+                  <p class="benefit-text">6 courses</p>
+              </div>
+          </div>
+  
+          <!-- Point 3 -->
+          <div class="col">
+              <div class="benefit-item d-flex align-items-center">
+                  <img src="https://training-uploads.internshala.com/jos_common/projects.png.webp" alt="8 Projects" class="benefit-img me-3">
+                  <p class="benefit-text">8 Projects</p>
+              </div>
+          </div>
+  
+          <!-- Point 4 -->
+          <div class="col">
+              <div class="benefit-item d-flex align-items-center">
+                  <img src="https://training-uploads.internshala.com/jos_common/chatgpt.png.webp" alt="ChatGPT covered" class="benefit-img me-3">
+                  <p class="benefit-text">ChatGPT covered</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container download-section m mb-4">
+      <p class="mb-3 dwntext">To learn more about the course download the brochure.</p>
+      <a href="javascript:void(0);" class="download-btn" onclick="openForm()">
+          <span class="download-text">Download brochure</span>
+          <i class="bi bi-download icon-blue"></i>  <!-- Bootstrap icon for download -->
+      </a>
+  </div>
+  
+  <div id="overlay" class="overlay"></div>
+
+  <!-- Hidden form initially -->
+  <div class="form-container" id="formContainer" style="display:none;">
+      <div class="form-content">
+          <span class="form-close-btn" onclick="closeForm()">&times;</span>
+          <h5 class="form-heading">Download Brochure</h5>
+          <form>
+              <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label">Email Id</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email id">
+              </div>
+              <div class="mb-3">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+              </div>
+              <div class="mb-3">
+                  <label for="education" class="form-label">Education</label>
+                  <select class="form-select" id="education">
+                      <option value="">Select your education</option>
+                      <option value="bba">BBA</option>
+                      <option value="bbm">BBM</option>
+                      <option value="bsc">BSc</option>
+                      <!-- Add more options if needed -->
+                  </select>
+              </div>
+              <div class="mb-3">
+                  <label for="year" class="form-label">Year of Graduation</label>
+                  <select class="form-select" id="year">
+                      <option value="">Select your year of graduation</option>
+                  </select>
+               </div>
+               <div class="mb-3">
+                  <button type="submit" class="custom-btn w-100">Download Brochure</button>
+              </div>
+          </form>
+      </div>
+  </div>
+
     
       
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-      <script src="script.js"></script>
+      <script src="assets/js/script.js"></script>
        
 </body>
 </html>
