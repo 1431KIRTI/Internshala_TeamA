@@ -33,10 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
-<<<<<<< HEAD
 });
-=======
-  });
 
 
    // Get all the elements with the class 'lightbox-trigger'
@@ -83,5 +80,4 @@ document.getElementById('overlay').style.display = 'none'; // Hide the overlay
                        option.textContent = year;
                        yearSelect.appendChild(option);
                    }
-  
->>>>>>> 63cd34f47f9b4086b08e3692b95a0db99666af33
+   
