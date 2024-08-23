@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(246, 246, 210);
+    background-color: white;
 }
 
 /* Hide the navbar by default */
@@ -287,6 +287,7 @@ body {
     display: block;
     margin: -25px auto;
 }
+<<<<<<< HEAD
 
 .custom-container {
     position: absolute;
@@ -489,3 +490,417 @@ ul li {
     margin-right: 0;
     /* Remove margin after the last icon */
 }
+=======
+/*Top career options in UI/UX Design*/
+h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card-img-top {
+    width: 100px;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.card-body {
+    padding: 1rem; 
+}
+
+#ui-uxdes1, #ui-uxdes2 {
+    font-weight: bold;
+}
+
+.large-img {
+    width: 80%;
+    max-width: 90%; /* Ensure it doesn't exceed container width */
+    height: auto;
+}
+
+.col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Card styling for the Career Options section */
+.career-options .card {
+    margin-bottom: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Card styling for the Explore More section */
+.explore-more-card {
+    border: 2px solid white; /* White borders for the Explore More section */
+    margin-bottom: 0;
+    position: relative;
+}
+.explore-more-middle-border {
+    border-left: 1px solid rgb(186, 184, 184); /* Set a black left border for the middle card */
+    padding-left: 20px; /* Add padding to make space for border */
+    margin-left: -10px; /* Adjust this value to move the border left */
+    margin-right: 10px; /* Adjust this value to provide space on the right */
+}
+
+/* Lightbox modal style */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 10px; /* Padding at the top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    /* Remove the background and padding */
+}
+
+.lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: -45px; /* Move the close button higher */
+    right: -20px; /* Move the close button further right */
+    color: white;
+    font-size: 35px; /* Increased size */
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+.explore-more-heading {
+    margin-top: 60px; /* Adjust this value to your preference */
+}
+/* Styling for the Key Benefits section */
+.benefit-item {
+background-color: white; /* Light background for each item */
+padding: 4px; /* Adjusted padding to reduce space inside the items */
+display: flex;
+align-items:left;
+row-gap: -30px;
+margin-bottom: 10px; /* Reduced bottom margin between items */
+}
+
+.benefit-text {
+margin: 0;
+font-size: 16px;
+font-weight: 500;
+}
+
+.benefit-img {
+width: 40px; /* Adjust the size of the images as needed */
+height: auto;
+margin-right: 10px; /* Space between image and text */
+}
+.download-section {
+margin-top: 5px;
+text-align: left; /* Align content to the left */
+}
+
+.download-btn {
+display: inline-flex;
+align-items: center;
+background-color: white;
+color: #4a90e2;
+border: 2px solid #4a90e2;
+border-radius: 5px;
+padding: 5px 10px;
+font-size: 16px;
+text-decoration: none; /* Removes underline */
+cursor: pointer;
+}
+.download-text {
+font-weight: 500; /* Set a lighter weight than bold */
+}
+
+.download-btn i {
+margin-left: 10px; /* Space between text and icon */
+font-size: 16px;
+}
+
+.download-btn:hover {
+box-shadow: 0 px 5px rgba(0, 0, 0, 0.705);
+}
+
+.download-btn:focus {
+outline: none; /* Remove default outline */
+}
+
+/* Form styling */
+.overlay {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 999; /* Just below the form */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.form-container {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 400px;
+background-color: white;
+border: 2px solid #ccc;
+border-radius: 10px;
+padding: 20px;
+z-index: 1000; /* Higher than overlay */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-content {
+position: relative;
+}
+
+.form-heading {
+text-align: left; /* Align heading to the left */
+margin-bottom: 20px;
+font-weight: 600;
+}
+
+.form-close-btn {
+position: absolute;
+top: -10px; /* Move closer to the top */
+right: 10px;
+color: black;
+font-size: 30px;
+font-weight: bold;
+cursor: pointer;
+}
+.custom-btn-dwn {
+background-color: #4a90e2; /* Custom color */
+color: white; /* Text color */
+border: none; /* Remove border */
+padding:5px;
+}
+/*Accordion Styling*/
+.accordion-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.4rem; /* Adjust padding as needed */
+}
+
+.accordion-button ul {
+    margin-top: 0.5rem;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem; /* Add some space between the inline-flex items */
+}
+
+.accordion-button li {
+    margin-bottom: 0rem;
+    display: flex;
+    align-items: left;
+}
+
+.accordion-button li.d-inline-flex {
+    flex: 1 1 calc(50% - 0.5rem); /* Adjust width with gap considered */
+    margin-right: -9.08rem; /* Reduce space between the items */
+    gap:5px;
+}
+
+.accordion-button li.d-block {
+    flex: 1 1 100%; /* Takes full width on a new line */
+    margin-top: 0.25rem; /* Optional: space above the third item */
+}
+.accordion-button .list-unstyled {
+    margin-bottom: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    color: black;
+}
+
+/* Accordion borders and body styles */
+.accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+
+.accordion-body {
+    background-color: white;
+}
+
+/* Styling the icons */
+.accordion-body i {
+    margin-right: 10px;
+    color: #555;
+}
+
+/* Making the accordion heading more prominent */
+.accordion-header button {
+    font-size: 18px;
+}
+.accordion-button .course-title {
+    font-weight: 600; /* Optional: makes the course title bold */
+}
+.accordion-body ul {
+    padding-left: 0;
+}
+
+.accordion-body ul li {
+    list-style: none;
+    padding: 0px 0; /* Reduce padding between list items */
+}
+
+.accordion-body ul .accordion-item {
+    margin-bottom: 0; /* Reduce space between sub-accordion items */
+}
+
+.accordion-item .accordion-header {
+    padding: 0;
+}
+
+.sub-accordion-button {
+    padding:  0; /* Reduce padding for sub-accordion buttons */
+}
+
+.sub-accordion-button.collapsed {
+    background-color: transparent;
+    border:#000;
+}
+
+.accordion-body .btn-link {
+    text-decoration: none;
+    color: #4a90e2;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.accordion-body .btn-link i {
+    margin-right: 10px;
+    font-size: 20px;
+    color:#4a90e2;
+}
+
+.accordion-body .project-info {
+    margin-top: 20px;
+    background-color: #ebf2fc;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.accordion-body .project-info i {
+    margin-right: 10px;
+}
+.accordion-header p{
+    font-size: 17px;
+}
+
+/* ai tools start */
+
+#ai_tools {
+    position: relative;
+    margin: 40px auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: transparent; /* No background color needed here */
+    border-radius: 10px;
+  }
+  .background-hg {
+    background: #e7f6ff;
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px; /* To match the rounded corners of the card */
+  }
+  .section-content {
+    margin: 10px auto;
+    padding: 30px;
+    background-color: #ffffff; /* Light blue card background */
+    border-radius: 10px;
+    border: 1px solid #cae7ff;    
+  }
+  .tools-list .tool {
+    display: flex;
+    align-items: start;
+    margin-bottom: 15px;
+  }
+  .tools-list .tool .fa-circle-check {
+    font-size: 18px;
+    margin-right: 20px;
+    margin-top: 3px;
+  }
+  .tools-list .tool .description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+/* ai tools end */
+/* skills start */
+#skills_you_learn{
+    position: relative;
+    margin: 40px auto;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    background-color: transparent; /* No background color needed here */
+    border-radius: 10px;
+}
+.key-highlights-wrapper {
+    padding-top: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.highlights-container {
+    width: calc(33% - 20px); /* Adjust width to ensure equal sizes */
+    border: 1px solid #cae7ff;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.highlights-container:hover {
+    transform: translateY(-5px);
+}
+
+.highlights-child {
+    display: flex;
+    align-items: center; /* Vertically center the image and content */
+}
+
+.highlights-image {
+    margin-right: 10px;
+}
+
+.highlights-image img {
+    width: 40px;
+    height: 40px;
+}
+
+.highlights-content {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+/* skills end */
+>>>>>>> 63cd34f47f9b4086b08e3692b95a0db99666af33

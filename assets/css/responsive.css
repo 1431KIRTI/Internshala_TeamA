@@ -1,0 +1,35 @@
+@media (max-width: 420px) 
+{
+    .form-container {
+    width: 90%; /* Adjust width to fit smaller screens */
+    padding: 15px; /* Reduce padding */
+    }
+    
+    .form-close-btn {
+    font-size: 18px; /* Slightly smaller close button */
+    top: 10px; /* Adjust top position for smaller screen */
+    }
+    
+    .form-heading {
+    font-size: 18px; /* Adjust heading font size */
+    }
+}
+@media (max-width: 768px) {
+    .benefit-item {
+    margin-bottom: -10px; /* Reduced bottom margin for smaller screens */
+    }
+}
+@media(max-width :500px){
+    .accordion-button li.d-inline-flex {
+        margin-right: 0; /* Reduce space between the items */
+@media (max-width: 768px) {
+    .highlights-container {
+        width: calc(50% - 20px); /* Make boxes wider for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .highlights-container {
+        width: 100%; /* Stack boxes on top of each other for very small screens */
+    }
+}
