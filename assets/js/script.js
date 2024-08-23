@@ -1,40 +1,36 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize Bootstrap dropdowns
-    var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
-    var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
-        return new bootstrap.Dropdown(dropdownToggleEl);
-    });
+document.addEventListener('scroll', function() {
+    var navbar = document.querySelector('.navbar-fixed');
+    var headerSection = document.querySelector('.header-section');
+    var headerSectionHeight = headerSection.offsetHeight;
 
-    // Mega Menu Hover Functionality
-    document.querySelectorAll('.nav-item.dropdown').forEach(function(dropdown) {
-        dropdown.addEventListener('mouseover', function() {
-            let dropdownMenu = dropdown.querySelector('.dropdown-menu');
-            if (dropdownMenu) {
-                dropdownMenu.classList.add('show');
-            }
-        });
-        dropdown.addEventListener('mouseout', function() {
-            let dropdownMenu = dropdown.querySelector('.dropdown-menu');
-            if (dropdownMenu) {
-                dropdownMenu.classList.remove('show');
-            }
-        });
-    });
-
-    // Modal Initialization
-    var loginModal = new bootstrap.Modal(document.getElementById('loginModal'), {
-        keyboard: false
-    });
+    // Show the navbar if scrolled past the header section
+    if (window.scrollY > headerSectionHeight) {
+        navbar.classList.add('show');
+    } else {
+        navbar.classList.remove('show');
+    }
 });
 
 
-document.querySelectorAll('.col-3 .dropdown-item').forEach(item => {
-    item.addEventListener('mouseenter', function() {
-      let target = this.getAttribute('data-target');
-      document.querySelectorAll('.col-9 .sub-menu').forEach(menu => {
-        menu.style.display = 'none';
-      });
-      document.getElementById(target).style.display = 'block';
+document.addEventListener('DOMContentLoaded', function () {
+    // Get all dropdown items with data-target attribute
+    var dropdownItems = document.querySelectorAll('.dropdown-item[data-target]');
+
+    dropdownItems.forEach(function (item) {
+        item.addEventListener('mouseover', function () {
+            var targetId = this.getAttribute('data-target');
+            var subMenu = document.getElementById(targetId);
+            if (subMenu) {
+                subMenu.style.display = 'block'; // Show the sub-menu
+            }
+        });
+
+        item.addEventListener('mouseout', function () {
+            var targetId = this.getAttribute('data-target');
+            var subMenu = document.getElementById(targetId);
+            if (subMenu) {
+                subMenu.style.display = 'none'; // Hide the sub-menu
+            }
+        });
     });
-  });
-  
+});
