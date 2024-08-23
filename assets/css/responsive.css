@@ -19,3 +19,8 @@
     margin-bottom: -10px; /* Reduced bottom margin for smaller screens */
     }
 }
+@media(max-width :500px){
+    .accordion-button li.d-inline-flex {
+        margin-right: 0; /* Reduce space between the items */
+    }
+}
