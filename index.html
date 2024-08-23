@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<<<<<<< HEAD
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>INTERNSHALA</title>
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./assets/css/styles.css">
-=======
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INTERNSHALA</title>
@@ -27,69 +13,304 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
->>>>>>> 63cd34f47f9b4086b08e3692b95a0db99666af33
 </head>
-
 <body>
-  <!-- Sticky Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-5">
-        <li class="nav-item">
-          <a class="nav-link" href="#reviews">Reviews</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#companies">Companies Hiring</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#placement">Guaranteed Placement</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#career">Career Options</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#certification">Certifications</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#faculty">Faculty</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#fees">Fees</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#faqs">FAQs</a>
-        </li>
-      </ul>
-      <!-- Apply Now Button -->
-      <div class="col-md-2 mx-auto apply-block">
-        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#applyModal">Apply Now</button>
-      </div>
 
-      <!-- Modal -->
-      <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+<!-- Sticky Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-5">
+      <li class="nav-item">
+        <a class="nav-link" href="#reviews">Reviews</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#companies">Companies Hiring</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#placement">Guaranteed Placement</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#career">Career Options</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#certification">Certifications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#faculty">Faculty</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#fees">Fees</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#faqs">FAQs</a>
+      </li>
+    </ul>
+    <!-- Apply Now Button -->
+    <div class="d-flex">
+      <button class="btn btn-primary ms-2" type="button" data-bs-toggle="modal" data-bs-target="#applyModal">Apply Now</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered"> <!-- Added class for vertical centering -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="applyModalLabel">Application Form</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid ">
+          <!-- Left: Logo -->
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/logo.png" alt="Logo" width="120">
+          </a>
+      
+          <!-- Center: Courses -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+              <!-- Certification Courses Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="certCoursesDropdown" role="button" aria-expanded="false">
+                  Certification Courses <span class="badge bg-danger ms-1">OFFER</span>
+                </a>
+                <ul class="dropdown-menu mega-menu" aria-labelledby="certCoursesDropdown">
+                  <div class="row">
+                    <div class="col-3">
+                      <li><a class="dropdown-item" href="#" data-target="popular">Most Popular</a></li>
+                      <li><a class="dropdown-item" href="#" data-target="programming">Programming</a></li>
+                      <li><a class="dropdown-item" href="#" data-target="business">Business & Management</a></li>
+                      <li><a class="dropdown-item" href="#" data-target="core">Core Engineering</a></li>
+                      <li><a class="dropdown-item" href="#" data-target="data">Data Science</a></li>
+                      <li><a class="dropdown-item" href="#" data-target="design">Design</a></li>
+                      <li><a class="dropdown-item" href="#" data-target="ai">Artificial Intelligence</a></li>
+                      <li><a class="dropdown-item" href="#" data-target="arts">Creative Arts</a></li>
+                      <li><a class="dropdown-item" href="#" data-target="lang">Language</a></li>
+                      <li><a class="dropdown-item" href="#" data-target="career">Career Development</a></li>
+                    </div>
+                    <div class="col-9">
+                      <ul class="sub-menu" id="popular">
+                        <li><a class="dropdown-item" href="#">Web Development</a></li>
+                        <li><a class="dropdown-item" href="#">Programming with Python</a></li>
+                        <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                        <li><a class="dropdown-item" href="#">Machine Learning</a></li>
+                        <li><a class="dropdown-item" href="#">Advanced Excel</a></li>
+                        <li><a class="dropdown-item" href="#">AutoCAD</a></li>
+                        <li><a class="dropdown-item" href="#">Data Science</a></li>
+                        <li><a class="dropdown-item" href="#">Programming with C and C++</a></li>
+                        <li><a class="dropdown-item" href="#">Financial Modeling and Valuation</a></li>
+                        <li><a class="dropdown-item" href="#">Android App Development</a></li>
+                        <li><a class="dropdown-item" href="#">Prompt Engineering for GenAI</a></li>
+                        <li><a class="dropdown-item" href="#">Build your own GenAI <span class="badge bg-warning text-dark">NEW</span></a></li>
+                      </ul>
+                      <ul class="sub-menu" id="programming">
+                        <li><a class="dropdown-item" href="#">Web Devlopment</a></li>
+                        <li><a class="dropdown-item" href="#">Programming with Python</a></li>
+                        <li><a class="dropdown-item" href="#">Programming with C and C++</a></li>
+                        <li><a class="dropdown-item" href="#">Core Java</a></li>
+                        <li><a class="dropdown-item" href="#">Android App Development</a></li>
+                        <li><a class="dropdown-item" href="#">Ethical Hacking</a></li>
+                        <li><a class="dropdown-item" href="#">React</a></li>
+                        <li><a class="dropdown-item" href="#">Data Structures & Algorithms</a></li>
+                        <li><a class="dropdown-item" href="#">Clinical Trial Analysis & Reporting</a></li>
+                        <li><a class="dropdown-item" href="#">MATLAB®️</a></li>
+                        <li><a class="dropdown-item" href="#">Software Testing</a></li>
+                        <li><a class="dropdown-item" href="#">Cloud computing with AWS</a></li>
+                        <!-- Add more items as needed -->
+                      </ul>
+                      <ul class="sub-menu" id="business">
+                        <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                        <li><a class="dropdown-item" href="#">Advanced Excel</a></li>
+                        <li><a class="dropdown-item" href="#">Financial Modeling and Valuation</a></li>
+                        <li><a class="dropdown-item" href="#">Business Analytics</a></li>
+                        <li><a class="dropdown-item" href="#">Human Resource Management</a></li>
+                        <li><a class="dropdown-item" href="#">Business Communication Skills</a></li>
+                        <li><a class="dropdown-item" href="#">Stock Market Trading</a></li>
+                        <li><a class="dropdown-item" href="#">Tally</a></li>
+                        <li><a class="dropdown-item" href="#">SQL for Data Analytics</a></li>
+                        <li><a class="dropdown-item" href="#">Advanced Human Resource Management</a></li>
+                        <li><a class="dropdown-item" href="#">Product Mnagement</a></li>
+                        <li><a class="dropdown-item" href="#">Personal Finance 101</a></li>
+                        <!-- Add more items as needed -->
+                      </ul>
+                      <ul class="sub-menu" id="core">
+                        <li><a class="dropdown-item" href="#">AutoCAD</a></li>
+                        <li><a class="dropdown-item" href="#">VLSI Design</a></li>
+                        <li><a class="dropdown-item" href="#">SOLIDWORKS</a></li>
+                        <li><a class="dropdown-item" href="#">MATLAB®️</a></li>
+                        <li><a class="dropdown-item" href="#">Ansys</a></li>
+                        <li><a class="dropdown-item" href="#">CATIA</a></li>
+                        <li><a class="dropdown-item" href="#">STAAD Pro</a></li>
+                        <li><a class="dropdown-item" href="#">PLC Programing</a></li>
+                        <li><a class="dropdown-item" href="#">Arduino</a></li>
+                        <li><a class="dropdown-item" href="#">AutoCAD 3D</a></li>
+                        <li><a class="dropdown-item" href="#">Advanced SOLIDWORKS</a></li>
+                        <li><a class="dropdown-item" href="#">Internet of Things</a></li>
+                        <!-- Add more items as needed -->
+                      </ul>
+                      <ul class="sub-menu" id="data">
+                        <li><a class="dropdown-item" href="#">Machine Learning</a></li>
+                        <li><a class="dropdown-item" href="#">Advanced Excel</a></li>
+                        <li><a class="dropdown-item" href="#">Data Science</a></li>
+                        <li><a class="dropdown-item" href="#">Buisness Analytics</a></li>
+                        <li><a class="dropdown-item" href="#">Clinical Trial Analysis & Reporting</a></li>
+                        <li><a class="dropdown-item" href="#">SQL for Data Analytics</a></li>
+                        <li><a class="dropdown-item" href="#">Power BI</a></li>
+                        <li><a class="dropdown-item" href="#">Tableau</a></li>
+                        <li><a class="dropdown-item" href="#">SAS Programming</a></li>
+                        <li><a class="dropdown-item" href="#">Natural Language Processing</a></li>
+                        <li><a class="dropdown-item" href="#">Statistics for Data Science</a></li>
+                        <!-- Add more items as needed -->
+                      </ul>
+                      <ul class="sub-menu" id="design">
+                        <li><a class="dropdown-item" href="#">Graphic Design</a></li>
+                        <li><a class="dropdown-item" href="#">Video Editing</a></li>
+                        <li><a class="dropdown-item" href="#">Animation</a></li>
+                        <li><a class="dropdown-item" href="#">digital Art</a></li>
+                        <li><a class="dropdown-item" href="#">WordPress</a></li>
+                        <!-- Add more items as needed -->
+                      </ul>
+                      <ul class="sub-menu" id="ai">
+                        <li><a class="dropdown-item" href="#">Prompt Engineering for GenAI</a></li>
+                        <li><a class="dropdown-item" href="#">Video Editing <span class="badge bg-warning text-dark">NEW</span></a></li>
+                        <!-- Add more items as needed -->
+                      </ul>
+                      <ul class="sub-menu" id="arts">
+                        <li><a class="dropdown-item" href="#">Creative Writing</a></li>
+                        <li><a class="dropdown-item" href="#">Photography</a></li>
+                        <li><a class="dropdown-item" href="#">Guitar</a></li>
+                        <li><a class="dropdown-item" href="#">Calligraphy</a></li>
+                        <li><a class="dropdown-item" href="#">Acting</a></li>
+                        <!-- Add more items as needed -->
+                      </ul>
+                      <ul class="sub-menu" id="lang">
+                        <li><a class="dropdown-item" href="#">English Speaking</a></li>
+                        <li><a class="dropdown-item" href="#">French Language</a></li>
+                        <li><a class="dropdown-item" href="#">Spanish Language</a></li>
+                        <!-- Add more items as needed -->
+                      </ul>
+                      <ul class="sub-menu" id="career">
+                        <li><a class="dropdown-item" href="#">Business Communication Skills</a></li>
+                        <li><a class="dropdown-item" href="#">Internship & Job Preparation</a></li>
+                        <li><a class="dropdown-item" href="#">How to Ace Coding Interviews</a></li>
+                        <li><a class="dropdown-item" href="#">Interview Preparation</a></li>
+                        <!-- Add more items as needed -->
+                      </ul>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+      
+              <!-- Placement Guarantee Courses Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="placementCoursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Placement Guarantee Courses
+                </a>
+                <ul class="dropdown-menu mega-menu" aria-labelledby="placementCoursesDropdown">
+                    <li>
+                      <a class="dropdown-item" href="full-stack.html">
+                        <img src="./assets/images/fullstack.png" alt="Full Stack Logo" class="dropdown-icon"> Full Stack Development
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="data-science.html">
+                        <img src="./assets/images/digital marketing.png" alt="Data Science Logo" class="dropdown-icon"> Data Science
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="human-resource.html">
+                        <img src="./assets/images/hrm.png" alt="Human Resource Logo" class="dropdown-icon"> Human Resource
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="digital-marketing.html">
+                        <img src="./assets/images/data science.png" alt="Digital Marketing Logo" class="dropdown-icon"> Digital Marketing
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="product-management.html">
+                        <img src="./assets/images/product management.png" alt="Product Management Logo" class="dropdown-icon"> Product Management
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="ui-ux.html">
+                        <img src="./assets/images/uiux.png" alt="UI/UX Logo" class="dropdown-icon"> UI/UX
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="electric-vehicle.html">
+                        <img src="./assets/images/electric vehicle.png" alt="Electric Vehicle Logo" class="dropdown-icon"> Electric Vehicle
+                      </a>
+                    </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+      
+          <!-- Right: Login -->
+          <div class="d-flex">
+            <button class="btn btn-outline-primary ms-2" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Login Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="applyModalLabel">Application Form</h5>
+              <h5 class="modal-title" id="loginModalLabel">Login</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+              <!-- Login Form -->
               <form>
                 <div class="mb-3">
-                  <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="name" required>
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                  <label for="message" class="form-label">Message</label>
-                  <textarea class="form-control" id="message" rows="3" required></textarea>
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
@@ -97,301 +318,69 @@
           </div>
         </div>
       </div>
-    </div>
-<<<<<<< HEAD
-  </nav>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container-fluid">
-      <!-- Left: Logo -->
-      <a class="navbar-brand" href="#">
-        <img src="./assets/images/logo.png" alt="Logo" width="120">
-      </a>
 
-      <!-- Center: Courses -->
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav mx-auto">
-          <!-- Certification Courses Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="certCoursesDropdown" role="button" aria-expanded="false">
-              Certification Courses <span class="badge bg-danger ms-1">OFFER</span>
-            </a>
-            <ul class="dropdown-menu mega-menu" aria-labelledby="certCoursesDropdown">
-              <div class="row">
-                <div class="col-3">
-                  <li><a class="dropdown-item" href="#" data-target="popular">Most Popular</a></li>
-                  <li><a class="dropdown-item" href="#" data-target="programming">Programming</a></li>
-                  <li><a class="dropdown-item" href="#" data-target="business">Business & Management</a></li>
-                  <li><a class="dropdown-item" href="#" data-target="core">Core Engineering</a></li>
-                  <li><a class="dropdown-item" href="#" data-target="data">Data Science</a></li>
-                  <li><a class="dropdown-item" href="#" data-target="design">Design</a></li>
-                  <li><a class="dropdown-item" href="#" data-target="ai">Artificial Intelligence</a></li>
-                  <li><a class="dropdown-item" href="#" data-target="arts">Creative Arts</a></li>
-                  <li><a class="dropdown-item" href="#" data-target="lang">Language</a></li>
-                  <li><a class="dropdown-item" href="#" data-target="career">Career Development</a></li>
+
+      <div class="container-fluid header-section">
+        <div class="row align-items-center">
+            <!-- Left Side Content -->
+             
+            <div class="col-md-6 text-section">
+              <div class="button-group">
+                <div class="custom-btn-wrapper">
+                    <button class="btn custom-btn1">
+                        Government-certified
+                        <div class="electric-line"></div>
+                    </button>
                 </div>
-                <div class="col-9">
-                  <ul class="sub-menu" id="popular">
-                    <li><a class="dropdown-item" href="#">Web Development</a></li>
-                    <li><a class="dropdown-item" href="#">Programming with Python</a></li>
-                    <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
-                    <li><a class="dropdown-item" href="#">Machine Learning</a></li>
-                    <li><a class="dropdown-item" href="#">Advanced Excel</a></li>
-                    <li><a class="dropdown-item" href="#">AutoCAD</a></li>
-                    <li><a class="dropdown-item" href="#">Data Science</a></li>
-                    <li><a class="dropdown-item" href="#">Programming with C and C++</a></li>
-                    <li><a class="dropdown-item" href="#">Financial Modeling and Valuation</a></li>
-                    <li><a class="dropdown-item" href="#">Android App Development</a></li>
-                    <li><a class="dropdown-item" href="#">Prompt Engineering for GenAI</a></li>
-                    <li><a class="dropdown-item" href="#">Build your own GenAI <span
-                          class="badge bg-warning text-dark">NEW</span></a></li>
-                  </ul>
-                  <ul class="sub-menu" id="programming" style="display: none;">
-                    <li><a class="dropdown-item" href="#">Web Devlopment</a></li>
-                    <li><a class="dropdown-item" href="#">Programming with Python</a></li>
-                    <li><a class="dropdown-item" href="#">Programming with C and C++</a></li>
-                    <li><a class="dropdown-item" href="#">Core Java</a></li>
-                    <li><a class="dropdown-item" href="#">Android App Development</a></li>
-                    <li><a class="dropdown-item" href="#">Ethical Hacking</a></li>
-                    <li><a class="dropdown-item" href="#">React</a></li>
-                    <li><a class="dropdown-item" href="#">Data Structures & Algorithms</a></li>
-                    <li><a class="dropdown-item" href="#">Clinical Trial Analysis & Reporting</a></li>
-                    <li><a class="dropdown-item" href="#">MATLAB®️</a></li>
-                    <li><a class="dropdown-item" href="#">Software Testing</a></li>
-                    <li><a class="dropdown-item" href="#">Cloud computing with AWS</a></li>
-                    <!-- Add more items as needed -->
-                  </ul>
-                  <ul class="sub-menu" id="business" style="display: none;">
-                    <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
-                    <li><a class="dropdown-item" href="#">Advanced Excel</a></li>
-                    <li><a class="dropdown-item" href="#">Financial Modeling and Valuation</a></li>
-                    <li><a class="dropdown-item" href="#">Business Analytics</a></li>
-                    <li><a class="dropdown-item" href="#">Human Resource Management</a></li>
-                    <li><a class="dropdown-item" href="#">Business Communication Skills</a></li>
-                    <li><a class="dropdown-item" href="#">Stock Market Trading</a></li>
-                    <li><a class="dropdown-item" href="#">Tally</a></li>
-                    <li><a class="dropdown-item" href="#">SQL for Data Analytics</a></li>
-                    <li><a class="dropdown-item" href="#">Advanced Human Resource Management</a></li>
-                    <li><a class="dropdown-item" href="#">Product Mnagement</a></li>
-                    <li><a class="dropdown-item" href="#">Personal Finance 101</a></li>
-                    <!-- Add more items as needed -->
-                  </ul>
-                  <ul class="sub-menu" id="core" style="display: none;">
-                    <li><a class="dropdown-item" href="#">AutoCAD</a></li>
-                    <li><a class="dropdown-item" href="#">VLSI Design</a></li>
-                    <li><a class="dropdown-item" href="#">SOLIDWORKS</a></li>
-                    <li><a class="dropdown-item" href="#">MATLAB®️</a></li>
-                    <li><a class="dropdown-item" href="#">Ansys</a></li>
-                    <li><a class="dropdown-item" href="#">CATIA</a></li>
-                    <li><a class="dropdown-item" href="#">STAAD Pro</a></li>
-                    <li><a class="dropdown-item" href="#">PLC Programing</a></li>
-                    <li><a class="dropdown-item" href="#">Arduino</a></li>
-                    <li><a class="dropdown-item" href="#">AutoCAD 3D</a></li>
-                    <li><a class="dropdown-item" href="#">Advanced SOLIDWORKS</a></li>
-                    <li><a class="dropdown-item" href="#">Internet of Things</a></li>
-                    <!-- Add more items as needed -->
-                  </ul>
-                  <ul class="sub-menu" id="data" style="display: none;">
-                    <li><a class="dropdown-item" href="#">Machine Learning</a></li>
-                    <li><a class="dropdown-item" href="#">Advanced Excel</a></li>
-                    <li><a class="dropdown-item" href="#">Data Science</a></li>
-                    <li><a class="dropdown-item" href="#">Buisness Analytics</a></li>
-                    <li><a class="dropdown-item" href="#">Clinical Trial Analysis & Reporting</a></li>
-                    <li><a class="dropdown-item" href="#">SQL for Data Analytics</a></li>
-                    <li><a class="dropdown-item" href="#">Power BI</a></li>
-                    <li><a class="dropdown-item" href="#">Tableau</a></li>
-                    <li><a class="dropdown-item" href="#">SAS Programming</a></li>
-                    <li><a class="dropdown-item" href="#">Natural Language Processing</a></li>
-                    <li><a class="dropdown-item" href="#">Statistics for Data Science</a></li>
-                    <!-- Add more items as needed -->
-                  </ul>
-                  <ul class="sub-menu" id="design" style="display: none;">
-                    <li><a class="dropdown-item" href="#">Graphic Design</a></li>
-                    <li><a class="dropdown-item" href="#">Video Editing</a></li>
-                    <li><a class="dropdown-item" href="#">Animation</a></li>
-                    <li><a class="dropdown-item" href="#">digital Art</a></li>
-                    <li><a class="dropdown-item" href="#">WordPress</a></li>
-                    <!-- Add more items as needed -->
-                  </ul>
-                  <ul class="sub-menu" id="ai" style="display: none;">
-                    <li><a class="dropdown-item" href="#">Prompt Engineering for GenAI</a></li>
-                    <li><a class="dropdown-item" href="#">Video Editing <span
-                          class="badge bg-warning text-dark">NEW</span></a></li>
-                    <!-- Add more items as needed -->
-                  </ul>
-                  <ul class="sub-menu" id="arts" style="display: none;">
-                    <li><a class="dropdown-item" href="#">Creative Writing</a></li>
-                    <li><a class="dropdown-item" href="#">Photography</a></li>
-                    <li><a class="dropdown-item" href="#">Guitar</a></li>
-                    <li><a class="dropdown-item" href="#">Calligraphy</a></li>
-                    <li><a class="dropdown-item" href="#">Acting</a></li>
-                    <!-- Add more items as needed -->
-                  </ul>
-                  <ul class="sub-menu" id="lang" style="display: none;">
-                    <li><a class="dropdown-item" href="#">English Speaking</a></li>
-                    <li><a class="dropdown-item" href="#">French Language</a></li>
-                    <li><a class="dropdown-item" href="#">Spanish Language</a></li>
-                    <!-- Add more items as needed -->
-                  </ul>
-                  <ul class="sub-menu" id="career" style="display: none;">
-                    <li><a class="dropdown-item" href="#">Business Communication Skills</a></li>
-                    <li><a class="dropdown-item" href="#">Internship & Job Preparation</a></li>
-                    <li><a class="dropdown-item" href="#">How to Ace Coding Interviews</a></li>
-                    <li><a class="dropdown-item" href="#">Interview Preparation</a></li>
-                    <!-- Add more items as needed -->
-                  </ul>
+                <div class="custom-btn-wrapper">
+                    <button class="btn custom-btn1">
+                         AI-Powered <i class="fas fa-magic"></i>
+                        <div class="electric-line"></div>
+                    </button>
                 </div>
-              </div>
-            </ul>
-          </li>
-
-          <!-- Placement Guarantee Courses Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="placementCoursesDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Placement Guarantee Courses
-            </a>
-            <ul class="dropdown-menu mega-menu" aria-labelledby="placementCoursesDropdown">
-              <li>
-                <a class="dropdown-item" href="full-stack.html">
-                  <img src="./assets/images/fullstack.png" alt="Full Stack Logo" class="dropdown-icon"> Full Stack
-                  Development
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="data-science.html">
-                  <img src="./assets/images/digital marketing.png" alt="Data Science Logo" class="dropdown-icon"> Data
-                  Science
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="human-resource.html">
-                  <img src="./assets/images/hrm.png" alt="Human Resource Logo" class="dropdown-icon"> Human Resource
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="digital-marketing.html">
-                  <img src="./assets/images/data science.png" alt="Digital Marketing Logo" class="dropdown-icon">
-                  Digital Marketing
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="product-management.html">
-                  <img src="./assets/images/product management.png" alt="Product Management Logo" class="dropdown-icon">
-                  Product Management
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="ui-ux.html">
-                  <img src="./assets/images/uiux.png" alt="UI/UX Logo" class="dropdown-icon"> UI/UX
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="electric-vehicle.html">
-                  <img src="./assets/images/electric vehicle.png" alt="Electric Vehicle Logo" class="dropdown-icon">
-                  Electric Vehicle
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Right: Login -->
-      <div class="d-flex">
-        <button class="btn btn-outline-primary ms-2" type="button" data-bs-toggle="modal"
-          data-bs-target="#loginModal">Login</button>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Login Modal -->
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="loginModalLabel">Login</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Login Form -->
-          <form>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
             </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password">
+            <h1 style="color: white; margin-left: 40px;">
+              <span style="color: #ffd907;">UI/UX Design</span> Course with Guaranteed Placement
+            </h1>
+            <h3 style="margin-left: 40px;">Get confirmed ₹35,000 total stipend</h3>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+    
+            <!-- Right Side Image -->
+            <div class="col-md-6 image-section">
+                <img src="https://training-comp-uploads.internshala.com/ui-ux-specialization/banner_hero.png" alt="UI/UX Design" class="img-fluid">
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 
 
-  <div class="container-fluid header-section">
-    <div class="row align-items-center">
-      <!-- Left Side Content -->
-
-      <div class="col-md-6 text-section">
-        <div class="button-group">
-          <div class="custom-btn-wrapper">
-            <button class="btn custom-btn">
-              Government-certified
-              <div class="electric-line"></div>
-            </button>
-          </div>
-          <div class="custom-btn-wrapper">
-            <button class="btn custom-btn">
-              AI-Powered <i class="fas fa-magic"></i>
-              <div class="electric-line"></div>
-            </button>
-          </div>
-        </div>
-        <h1 style="color: white; margin-left: 40px;">
-          <span style="color: #ffd907;">UI/UX Design</span> Course with Guaranteed Placement
-        </h1>
-        <h3 style="margin-left: 40px;">Get confirmed ₹35,000 total stipend</h3>
-      </div>
-
-      <!-- Right Side Image -->
-      <div class="col-md-6 image-section">
-        <img src="https://training-comp-uploads.internshala.com/ui-ux-specialization/banner_hero.png" alt="UI/UX Design"
-          class="img-fluid">
-      </div>
-    </div>
-  </div>
-
-  <!-- Container placed half on the header and half outside -->
-  <div class="custom-container">
+    <!-- Container placed  -->
+  <div class="custom-container1">
     <div class="row text-center">
       <!-- Block 1 -->
-      <div class="col-md-1 mx-auto info-block">
+      <div class="col-md-1 mx-auto info-block1">
         <div class="info-content">
           <i class="far fa-clock"></i>
-          <div class="info-text">
+          <div class="info-text1">
             <div>Online</div>
             <div>6 hours</div>
           </div>
         </div>
       </div>
       <!-- Block 2 -->
-      <div class="col-md-2 mx-auto info-block">
+      <div class="col-md-2 mx-auto info-block1">
         <div class="info-content">
           <i class="far fa-calendar"></i>
-          <div class="info-text">
+          <div class="info-text1">
             <div>ADMISSION CLOSES ON</div>
             <div>23rd Aug <span class="special-text">Limited seats</span></div>
           </div>
         </div>
       </div>
       <!-- Block 3 -->
-      <div class="col-md-2 mx-auto info-block">
+      <div class="col-md-2 mx-auto info-block1">
         <div class="info-content">
-          <i class="fa fa-rupee-sign"></i>
-          <div class="info-text">
+          <i class="rupee-symbol">₹</i>
+          <div class="info-text1">
             <div>COURSE FEE</div>
             <div>₹37,500 <span class="stroke">42,000</span> <span class="change-color">Save ₹4,500</span><span
                 class="special-text">Valid till 23 Aug</span></div>
@@ -399,10 +388,10 @@
         </div>
       </div>
       <!-- Block 4 -->
-      <div class="col-md-2 mx-auto info-block">
+      <div class="col-md-2 mx-auto info-block1">
         <div class="info-content">
           <i class="fa fa-bolt"></i>
-          <div class="info-text">
+          <div class="info-text1">
             <div>GUARANTEE</div>
             <div>100% refund if not hired</div>
           </div>
@@ -410,9 +399,9 @@
       </div>
       <!-- Apply Now Block -->
       <div class="col-md-2 mx-auto apply-block">
-        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#applyModal">Apply Now</button>
-        <div class="applied-info mt-2 text-center">
-          <i class="fa fa-chart-line"> <span class="number">42,438</span> already applied</i>
+        <button class="btn btn-primary w-10 mt-3" data-bs-toggle="modal" data-bs-target="#applyModal">Apply Now</button>
+        <div class="applied-info1 mt-2 text-center">
+          <i class="fa fa-chart-line"> <span class="number1">42,438 already applied</span></i>
         </div>
       </div>
 
@@ -460,146 +449,8 @@
       </div>
     </div>
   </div>
-  <!--<div id="reviews" class="section">Reviews Section</div> -->
-
-  <div class="custom-footer-container">
-    <footer class="footer">
-      <div class="container-fluid">
-        <!-- Upper Section -->
-        <div class="row upper-section">
-          <div class="col-md-3">
-            <h6>Programming</h6>
-            <ul class="list-unstyled">
-              <li><a href="web-development.html" class="btn btn-link">Web Development Course</a></li>
-              <li><a href="python-programming.html" class="btn btn-link">Programming with Python Course</a></li>
-              <li><a href="c-cpp-programming.html" class="btn btn-link">Programming with C and C++ Course</a></li>
-              <li><a href="core-java.html" class="btn btn-link">Core Java Course</a></li>
-              <li><a href="android-development.html" class="btn btn-link">Android App Development Course</a></li>
-              <li><a href="ethical-hacking.html" class="btn btn-link">Ethical Hacking Course</a></li>
-              <li><a href="react-course.html" class="btn btn-link">React Course</a></li>
-              <li><a href="dsa-course.html" class="btn btn-link">Data Structures & Algorithms Course</a></li>
-              <li><a href="clinical-trial-analysis.html" class="btn btn-link">Clinical Trial Analysis & Reporting
-                  Course</a></li>
-              <li><a href="matlab-course.html" class="btn btn-link">MATLAB® Course</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h6>Business & Management</h6>
-            <ul class="list-unstyled">
-              <li><a href="digital-marketing.html" class="btn btn-link">Digital Marketing Course</a></li>
-              <li><a href="advanced-excel.html" class="btn btn-link">Advanced Excel Course</a></li>
-              <li><a href="financial-modeling.html" class="btn btn-link">Financial Modeling and Valuation Course</a>
-              </li>
-              <li><a href="business-analytics.html" class="btn btn-link">Business Analytics Course</a></li>
-              <li><a href="hr-management.html" class="btn btn-link">Human Resource Management Course</a></li>
-              <li><a href="business-communication.html" class="btn btn-link">Business Communication Skills Course</a>
-              </li>
-              <li><a href="stock-market.html" class="btn btn-link">Stock Market Trading Course</a></li>
-              <li><a href="tally-course.html" class="btn btn-link">Tally Course</a></li>
-              <li><a href="sql-data-analytics.html" class="btn btn-link">SQL for Data Analytics Course</a></li>
-              <li><a href="advanced-hr-management.html" class="btn btn-link">Advanced Human Resource Management</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h6>Core Engineering</h6>
-            <ul class="list-unstyled">
-              <li><a href="autocad.html" class="btn btn-link">AutoCAD Course</a></li>
-              <li><a href="solidworks.html" class="btn btn-link">SOLIDWORKS Course</a></li>
-              <li><a href="matlab-engineering.html" class="btn btn-link">MATLAB® Course</a></li>
-              <li><a href="ansys-course.html" class="btn btn-link">Ansys Course</a></li>
-              <li><a href="catia-course.html" class="btn btn-link">CATIA Course</a></li>
-              <li><a href="staad-pro.html" class="btn btn-link">STAAD Pro Course</a></li>
-              <li><a href="plc-programming.html" class="btn btn-link">PLC Programming Course</a></li>
-              <li><a href="arduino-course.html" class="btn btn-link">Arduino Course</a></li>
-              <li><a href="autocad-3d.html" class="btn btn-link">AutoCAD 3D Course</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h6>Data Science</h6>
-            <ul class="list-unstyled">
-              <li><a href="machine-learning.html" class="btn btn-link">Machine Learning Course</a></li>
-              <li><a href="advanced-excel-data-science.html" class="btn btn-link">Advanced Excel Course</a></li>
-              <li><a href="data-science.html" class="btn btn-link">Data Science Course</a></li>
-              <li><a href="business-analytics-data-science.html" class="btn btn-link">Business Analytics Course</a></li>
-              <li><a href="clinical-trial-data-science.html" class="btn btn-link">Clinical Trial Analysis & Reporting
-                  Course</a></li>
-              <li><a href="sql-data-science.html" class="btn btn-link">SQL for Data Analytics Course</a></li>
-              <li><a href="power-bi.html" class="btn btn-link">Power BI Course</a></li>
-              <li><a href="tableau.html" class="btn btn-link">Tableau Course</a></li>
-              <li><a href="sas-programming.html" class="btn btn-link">SAS Programming Course</a></li>
-              <li><a href="nlp-course.html" class="btn btn-link">Natural Language Processing Course</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Thin White Line -->
-        <div class="row">
-          <div class="col-12">
-            <hr class="white-line">
-          </div>
-        </div>
-
-        <!-- Lower Section -->
-        <div class="row lower-section">
-          <div class="col-md-3">
-            <h6>Refund Policy</h6>
-            <ul class="list-unstyled">
-              <li><a href="ist-scholarship.html" class="btn btn-link">IST Scholarship</a></li>
-              <li><a href="coupon-offers.html" class="btn btn-link">Coupon Code and Offers</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h6>Help Center</h6>
-            <ul class="list-unstyled">
-              <li><a href="terms-conditions.html" class="btn btn-link">Terms & Conditions</a></li>
-              <li><a href="internshala.html" class="btn btn-link">Internshala</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h6>Site Map</h6>
-            <ul class="list-unstyled">
-              <li><a href="privacy-policy.html" class="btn btn-link">Privacy & Policy</a></li>
-            </ul>
-          </div>
-          <div class="col-md-3">
-            <h6>Blog</h6>
-            <ul class="list-unstyled d-flex justify-content-start social-icons">
-              <li>
-                <a href="https://www.linkedin.com" class="btn btn-link" target="_blank">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com" class="btn btn-link" target="_blank">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com" class="btn btn-link" target="_blank">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 
 
-
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-  <script src="./assets/js/script.js"></script>
-
-</body>
-
-</html>
-=======
     <div class="container mt-5">
       <!-- Heading -->
       <h2 class="mb-3">Top Career Options in UI/UX Design</h2>
@@ -768,133 +619,17 @@
                   </select>
                </div>
                <div class="mb-3">
-                  <button type="submit" class="custom-btn-dwn w-100">Download Brochure</button>
+                  <button type="submit" class="custom-btn w-100">Download Brochure</button>
               </div>
           </form>
       </div>
   </div>
-<!----------------------------ACCORDION------------------------------------------->
-<div class="container">
-  <div class="accordion" id="courseAccordion">
-      <!-- First Course -->
-      <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                  <span class="course-title">1. Figma</span>
-                  <ul class="list-unstyled ms-3 mb-0">
-                      <li class="d-inline-flex"><i class="bi bi-folder-fill"></i> 5 Modules</li>
-                      <li class="d-inline-flex"><i class="bi bi-play-circle"></i> 2 Demo videos inside</li>
-                      <li class="d-block"><i class="bi bi-briefcase-fill"></i> Project: Design a simple landing page for a website (desktop only)</li>
-                  </ul>
-              </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-              data-bs-parent="#courseAccordion">
-              <div class="accordion-body">
-                  <ul class="list-unstyled">
-                      <li><button class="btn btn-link"><i class="bi bi-play-circle"></i> Figma basics</button></li>
-                      <div class="accordion" id="subAccordion">
-                          <!-- First Sub-Item -->
-                          <div class="accordion-item">
-                              <h2 class="accordion-header" id="subHeadingOne">
-                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseOne" aria-expanded="false" aria-controls="subCollapseOne">
-                                      <i class="bi bi-file-text"></i><p> Colors, Images, Masks, Effects, Global Styles of Colors & Effects</p>
-                                  </button>
-                              </h2>
-                              <div id="subCollapseOne" class="accordion-collapse collapse" aria-labelledby="subHeadingOne" data-bs-parent="#subAccordion">
-                                  <div class="accordion-body">
-                                      Content for Colors, Images, Masks, Effects...
-                                  </div>
-                              </div>
-                          </div>
-
-                          <!-- Second Sub-Item -->
-                          <div class="accordion-item">
-                              <h2 class="accordion-header" id="subHeadingTwo">
-                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseTwo" aria-expanded="false" aria-controls="subCollapseTwo">
-                                      <i class="bi bi-file-text"></i> <p>Text, Typographical hierarchy & Text Styles</p>
-                                  </button>
-                              </h2>
-                              <div id="subCollapseTwo" class="accordion-collapse collapse" aria-labelledby="subHeadingTwo" data-bs-parent="#subAccordion">
-                                  <div class="accordion-body">
-                                      Content for Text, Typographical hierarchy...
-                                  </div>
-                              </div>
-                          </div>
-
-                          <!-- Third Sub-Item -->
-                          <div class="accordion-item">
-                              <h2 class="accordion-header" id="subHeadingThree">
-                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseThree" aria-expanded="false" aria-controls="subCollapseThree">
-                                      <i class="bi bi-file-text"></i> <p>Figma resources</p>
-                                  </button>
-                              </h2>
-                              <div id="subCollapseThree" class="accordion-collapse collapse" aria-labelledby="subHeadingThree" data-bs-parent="#subAccordion">
-                                  <div class="accordion-body">
-                                      Content for Figma resources...
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <li><button class="btn btn-link"><i class="bi bi-play-circle"></i> Auto Layout & Figma Components</button></li>
-                  </ul>
-                  <div class="project-info mt-3 p-3 rounded">
-                      <i class="bi bi-briefcase-fill"></i> 
-                      <strong>Project:</strong> Design a simple landing page for a website (desktop only)
-                      <p>Design a simple landing page that will promote and give well-designed information about a product or service. You will be using colors and color styles, text and typographical hierarchy, images, effects, and components.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      <!-- Second Course -->
-      <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <span class="course-title">2. Advanced Figma</span>
-                  <ul class="list-unstyled ms-3 mb-0">
-                      <li class="d-inline-flex"><i class="bi bi-folder-fill"></i> 6 Modules</li>
-                      <li class="d-inline-flex"><i class="bi bi-play-circle"></i> 3 Demo videos inside</li>
-                      <li class="d-block"><i class="bi bi-briefcase-fill"></i> Project: Design an advanced landing page with interactive elements</li>
-                  </ul>
-              </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-              data-bs-parent="#courseAccordion">
-              <!-- No accordion body needed -->
-          </div>
-      </div>
-
-      <!-- Third Course -->
-      <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  <span class="course-title">3. Getting into UI & UX</span>
-                  <ul class="list-unstyled ms-3 mb-0">
-                      <li class="d-inline-flex"><i class="bi bi-folder-fill"></i> 4 Modules</li>
-                      <li class="d-inline-flex"><i class="bi bi-play-circle"></i> 1 Demo video inside</li>
-                      <li class="d-block"><i class="bi bi-briefcase-fill"></i> Project: Create a complete UI/UX case study</li>
-                  </ul>
-              </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-              data-bs-parent="#courseAccordion">
-              <!-- No accordion body needed -->
-          </div>
-      </div>
-  </div>
-</div>
-
-
 
   <!-- ai tools start -->
   
 <section id="ai_tools" class="ai-tools">
   <div class="background-hg"></div>
-  <div class="container mt-5 ">
+  <div class="container mt-5">
   <h2 class="mb-3">Design a future-proof career by learning ChatGPT</h2>
 <div class="section-content">
   <div class="tools-list">
@@ -922,7 +657,7 @@
 
 <!-- skills start-->
 <section id="skills_you_learn" class="skills-learn">
-  <div class="container mt-4">
+  <div class="container mt-5">
       <h2 class="mb-3">Skills and tools you will learn</h2>
   <div class="key-highlights-wrapper">
       <div class="highlights-container">
@@ -999,6 +734,135 @@
   </div>
 </section> 
 <!-- skills end -->
+
+
+<div class="custom-footer-container">
+  <footer class="footer">
+    <div class="container-fluid">
+      <!-- Upper Section -->
+      <div class="row upper-section">
+        <div class="col-md-3">
+          <h6>Programming</h6>
+          <ul class="list-unstyled">
+            <li><a href="web-development.html" class="btn btn-link">Web Development Course</a></li>
+            <li><a href="python-programming.html" class="btn btn-link">Programming with Python Course</a></li>
+            <li><a href="c-cpp-programming.html" class="btn btn-link">Programming with C and C++ Course</a></li>
+            <li><a href="core-java.html" class="btn btn-link">Core Java Course</a></li>
+            <li><a href="android-development.html" class="btn btn-link">Android App Development Course</a></li>
+            <li><a href="ethical-hacking.html" class="btn btn-link">Ethical Hacking Course</a></li>
+            <li><a href="react-course.html" class="btn btn-link">React Course</a></li>
+            <li><a href="dsa-course.html" class="btn btn-link">Data Structures & Algorithms Course</a></li>
+            <li><a href="clinical-trial-analysis.html" class="btn btn-link">Clinical Trial Analysis & Reporting
+                Course</a></li>
+            <li><a href="matlab-course.html" class="btn btn-link">MATLAB® Course</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>Business & Management</h6>
+          <ul class="list-unstyled">
+            <li><a href="digital-marketing.html" class="btn btn-link">Digital Marketing Course</a></li>
+            <li><a href="advanced-excel.html" class="btn btn-link">Advanced Excel Course</a></li>
+            <li><a href="financial-modeling.html" class="btn btn-link">Financial Modeling and Valuation Course</a>
+            </li>
+            <li><a href="business-analytics.html" class="btn btn-link">Business Analytics Course</a></li>
+            <li><a href="hr-management.html" class="btn btn-link">Human Resource Management Course</a></li>
+            <li><a href="business-communication.html" class="btn btn-link">Business Communication Skills Course</a>
+            </li>
+            <li><a href="stock-market.html" class="btn btn-link">Stock Market Trading Course</a></li>
+            <li><a href="tally-course.html" class="btn btn-link">Tally Course</a></li>
+            <li><a href="sql-data-analytics.html" class="btn btn-link">SQL for Data Analytics Course</a></li>
+            <li><a href="advanced-hr-management.html" class="btn btn-link">Advanced Human Resource Management</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>Core Engineering</h6>
+          <ul class="list-unstyled">
+            <li><a href="autocad.html" class="btn btn-link">AutoCAD Course</a></li>
+            <li><a href="solidworks.html" class="btn btn-link">SOLIDWORKS Course</a></li>
+            <li><a href="matlab-engineering.html" class="btn btn-link">MATLAB® Course</a></li>
+            <li><a href="ansys-course.html" class="btn btn-link">Ansys Course</a></li>
+            <li><a href="catia-course.html" class="btn btn-link">CATIA Course</a></li>
+            <li><a href="staad-pro.html" class="btn btn-link">STAAD Pro Course</a></li>
+            <li><a href="plc-programming.html" class="btn btn-link">PLC Programming Course</a></li>
+            <li><a href="arduino-course.html" class="btn btn-link">Arduino Course</a></li>
+            <li><a href="autocad-3d.html" class="btn btn-link">AutoCAD 3D Course</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>Data Science</h6>
+          <ul class="list-unstyled">
+            <li><a href="machine-learning.html" class="btn btn-link">Machine Learning Course</a></li>
+            <li><a href="advanced-excel-data-science.html" class="btn btn-link">Advanced Excel Course</a></li>
+            <li><a href="data-science.html" class="btn btn-link">Data Science Course</a></li>
+            <li><a href="business-analytics-data-science.html" class="btn btn-link">Business Analytics Course</a></li>
+            <li><a href="clinical-trial-data-science.html" class="btn btn-link">Clinical Trial Analysis & Reporting
+                Course</a></li>
+            <li><a href="sql-data-science.html" class="btn btn-link">SQL for Data Analytics Course</a></li>
+            <li><a href="power-bi.html" class="btn btn-link">Power BI Course</a></li>
+            <li><a href="tableau.html" class="btn btn-link">Tableau Course</a></li>
+            <li><a href="sas-programming.html" class="btn btn-link">SAS Programming Course</a></li>
+            <li><a href="nlp-course.html" class="btn btn-link">Natural Language Processing Course</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Thin White Line -->
+      <div class="row">
+        <div class="col-12">
+          <hr class="white-line">
+        </div>
+      </div>
+
+      <!-- Lower Section -->
+      <div class="row lower-section">
+        <div class="col-md-3">
+          <h6>Refund Policy</h6>
+          <ul class="list-unstyled">
+            <li><a href="ist-scholarship.html" class="btn btn-link">IST Scholarship</a></li>
+            <li><a href="coupon-offers.html" class="btn btn-link">Coupon Code and Offers</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>Help Center</h6>
+          <ul class="list-unstyled">
+            <li><a href="terms-conditions.html" class="btn btn-link">Terms & Conditions</a></li>
+            <li><a href="internshala.html" class="btn btn-link">Internshala</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>Site Map</h6>
+          <ul class="list-unstyled">
+            <li><a href="privacy-policy.html" class="btn btn-link">Privacy & Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>Blog</h6>
+          <ul class="list-unstyled d-flex justify-content-start social-icons">
+            <li>
+              <a href="https://www.linkedin.com" class="btn btn-link" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com" class="btn btn-link" target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" class="btn btn-link" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+</div>
+
+
+
       
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
@@ -1006,4 +870,3 @@
        
 </body>
 </html>
->>>>>>> 63cd34f47f9b4086b08e3692b95a0db99666af33
