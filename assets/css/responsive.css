@@ -22,5 +22,14 @@
 @media(max-width :500px){
     .accordion-button li.d-inline-flex {
         margin-right: 0; /* Reduce space between the items */
+@media (max-width: 768px) {
+    .highlights-container {
+        width: calc(50% - 20px); /* Make boxes wider for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .highlights-container {
+        width: 100%; /* Stack boxes on top of each other for very small screens */
     }
 }
