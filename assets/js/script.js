@@ -77,10 +77,19 @@ document.getElementById('formContainer').style.display = 'none';
 document.getElementById('overlay').style.display = 'none'; // Hide the overlay
 }
    const yearSelect = document.getElementById('year');
-                   for (let year = 2009; year <= 2032; year++) {
-                       const option = document.createElement('option');
-                       option.value = year;
-                       option.textContent = year;
-                       yearSelect.appendChild(option);
-                   }
+    for (let year = 2009; year <= 2032; year++) {
+        const option = document.createElement('option');
+        option.value = year;
+        option.textContent = year;
+        yearSelect.appendChild(option);
+    }
+    function showForm() {
+        document.getElementById('newFormContainer').style.display = 'block';
+        document.getElementById('newOverlay').style.display = 'block';
+    }
+
+    function hideForm() {
+        document.getElementById('newFormContainer').style.display = 'none';
+        document.getElementById('newOverlay').style.display = 'none';
+    }
   

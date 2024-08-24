@@ -438,6 +438,7 @@ padding:5px;
     flex-direction: column;
     align-items: flex-start;
     padding: 0.4rem; /* Adjust padding as needed */
+    position: relative; /* Ensure relative positioning for the toggle button */
 }
 
 .accordion-button ul {
@@ -477,7 +478,7 @@ padding:5px;
 .accordion-item {
     border: 1px solid #ddd;
     border-radius: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .accordion-body {
@@ -486,7 +487,7 @@ padding:5px;
 
 /* Styling the icons */
 .accordion-body i {
-    margin-right: 10px;
+    margin-right: 0px;
     color: #555;
 }
 
@@ -502,8 +503,7 @@ padding:5px;
 }
 
 .accordion-body ul li {
-    list-style: none;
-    padding: 0px 0; /* Reduce padding between list items */
+    padding: 0; /* Reduce padding between list items */
 }
 
 .accordion-body ul .accordion-item {
@@ -524,34 +524,170 @@ padding:5px;
 }
 
 .accordion-body .btn-link {
-    text-decoration: none;
-    color: #4a90e2;
+    color: #3d7ac0bb;
     font-size: 17px;
     display: flex;
-    align-items: center;
+    align-items:left;
+    
 }
 
 .accordion-body .btn-link i {
     margin-right: 10px;
     font-size: 20px;
-    color:#4a90e2;
+    color:#4a91e2bb;
+    margin-left:-10px;
 }
 
-.accordion-body .project-info {
+#collapseOne .project-info {
     margin-top: 20px;
     background-color: #ebf2fc;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 16px;
+    margin-left:0;
+}
+
+#collapseOne .project-info i {
+    margin-right: 10px;
+}
+#collapseTwo .project-info {
+    margin-top: 20px;
+    background-color: #ebf2fc;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 16px;
+}
+#collapseTwo .project-info  i{
+    margin-right: 10px;
+} 
+
+#collapseThree .project-info {
+    margin-top: 20px;
+    background-color: #ebf2fc;
+    padding: 10px;
+    border-radius: 0px;
     font-size: 16px;
 }
 
-.accordion-body .project-info i {
+#collapseThree .project-info  i{
     margin-right: 10px;
 }
+
+#collapseFour .project-info {
+    margin-top: 20px;
+    background-color: #ebf2fc;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 16px;
+}
+
+#collapseFour .project-info  i{
+    margin-right: 10px;
+}
+
+#collapseFive .project-info {
+    margin-top: 20px;
+    background-color: #ebf2fc;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 16px;
+}
+
+#collapseFive .project-info  i{
+    margin-right: 10px;
+}
+
+#collapseSix .project-info {
+    margin-top: 20px;
+    background-color: #ebf2fc;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 16px;
+}
+
+#collapseSix .project-info  i{
+    margin-right: 10px;
+}
+
 .accordion-header p{
     font-size: 17px;
 }
+.accordion-button::after {
+    align-self: flex-start; /* This ensures the toggle icon stays at the top */
+}
+.sub-d-inline-flex i{
+    margin-right:5px;
+}
+#subCollapseOne .accordion-body ul{
+    list-style-type: disc;
+    margin-left:10px;
+}
+#subCollapseTwo .accordion-body ul{
+    list-style-type: disc;
+    margin-left:10px;
+}
+#subCollapseThree .accordion-body ul{
+    list-style-type: disc;
+    margin-left:10px;
+}
+#subCollapseFour .accordion-body ul{
+    list-style-type: disc;
+    margin-left:10px;
+}
+/* Accordion Form starts*/
+.new-overlay {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
+.new-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.new-form-content {
+    position: relative;
+}
+
+.new-form-heading {
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.new-form-close-btn {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.custom-btn-dwn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+/*Accordion form ends*/
+/*Accordion styling ends*/
 /* ai tools start */
 
 #ai_tools {

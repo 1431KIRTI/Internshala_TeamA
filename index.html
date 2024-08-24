@@ -237,37 +237,7 @@
       </div>
 
 
-      <div class="container-fluid header-section">
-        <div class="row align-items-center">
-            <!-- Left Side Content -->
-             
-            <div class="col-md-6 text-section">
-              <div class="button-group">
-                <div class="custom-btn-wrapper">
-                    <button class="btn custom-btn">
-                        Government-certified
-                        <div class="electric-line"></div>
-                    </button>
-                </div>
-                <div class="custom-btn-wrapper">
-                    <button class="btn custom-btn">
-                         AI-Powered <i class="fas fa-robot"></i>
-                        <div class="electric-line"></div>
-                    </button>
-                </div>
-            </div>
-            <h1 style="color: white; margin-left: 20px;">
-              <span style="color: #ffd907;">UI/UX Design</span> Course with Guaranteed Placement
-            </h1>
-            <h3 style="margin-left: 20px;">Get confirmed ₹35,000 total stipend</h3>
-            </div>
-    
-            <!-- Right Side Image -->
-            <div class="col-md-6 image-section">
-                <img src="https://training-comp-uploads.internshala.com/ui-ux-specialization/banner_hero.png" alt="UI/UX Design" class="img-fluid">
-            </div>
-        </div>
-    </div>
+      
     <div class="container mt-5">
       <!-- Heading -->
       <h2 class="mb-3">Top Career Options in UI/UX Design</h2>
@@ -448,7 +418,7 @@
       <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   <span class="course-title">1. Figma</span>
                   <ul class="list-unstyled ms-3 mb-0">
                       <li class="d-inline-flex"><i class="bi bi-folder-fill"></i> 5 Modules</li>
@@ -457,22 +427,34 @@
                   </ul>
               </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
               data-bs-parent="#courseAccordion">
               <div class="accordion-body">
                   <ul class="list-unstyled">
-                      <li><button class="btn btn-link"><i class="bi bi-play-circle"></i> Figma basics</button></li>
+                    <li>
+                        <button class="btn btn-link" type="button" onclick="showForm()" style="text-decoration: none; color:#4a90e2; font-size:19px;">
+                            <i class="bi bi-play-circle"></i> Figma basics
+                        </button>
+                    </li>
                       <div class="accordion" id="subAccordion">
                           <!-- First Sub-Item -->
                           <div class="accordion-item">
                               <h2 class="accordion-header" id="subHeadingOne">
                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseOne" aria-expanded="false" aria-controls="subCollapseOne">
-                                      <i class="bi bi-file-text"></i><p> Colors, Images, Masks, Effects, Global Styles of Colors & Effects</p>
+                                      <li class="sub-d-inline-flex"><i class="bi bi-file-text"></i> Colors, Images, Masks, Effects, Global Styles of Colors & Effects
+                                      </li>
                                   </button>
                               </h2>
                               <div id="subCollapseOne" class="accordion-collapse collapse" aria-labelledby="subHeadingOne" data-bs-parent="#subAccordion">
                                   <div class="accordion-body">
-                                      Content for Colors, Images, Masks, Effects...
+                                    <ul>
+                                      <li>Colors</li>
+                                      <li>Images & SVG's</li>
+                                      <li>Masks</li>
+                                      <li>Shadows</li>
+                                      <li>Background Blur</li>
+                                      <li>Layer Blur</li>
+                                  </ul>
                                   </div>
                               </div>
                           </div>
@@ -481,12 +463,15 @@
                           <div class="accordion-item">
                               <h2 class="accordion-header" id="subHeadingTwo">
                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseTwo" aria-expanded="false" aria-controls="subCollapseTwo">
-                                      <i class="bi bi-file-text"></i> <p>Text, Typographical hierarchy & Text Styles</p>
+                                    <li class="sub-d-inline-flex"><i class="bi bi-file-text"></i> 
+                                      Text, Typographical hierarchy & Text Styles</li>
                                   </button>
                               </h2>
                               <div id="subCollapseTwo" class="accordion-collapse collapse" aria-labelledby="subHeadingTwo" data-bs-parent="#subAccordion">
                                   <div class="accordion-body">
-                                      Content for Text, Typographical hierarchy...
+                                    <ul>
+                                      <li>Master Your Texts</li>
+                                  </ul>
                                   </div>
                               </div>
                           </div>
@@ -495,19 +480,25 @@
                           <div class="accordion-item">
                               <h2 class="accordion-header" id="subHeadingThree">
                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseThree" aria-expanded="false" aria-controls="subCollapseThree">
-                                      <i class="bi bi-file-text"></i> <p>Figma resources</p>
+                                    <li class="sub-d-inline-flex"><i class="bi bi-file-text"></i> Figma resources</li>
                                   </button>
                               </h2>
                               <div id="subCollapseThree" class="accordion-collapse collapse" aria-labelledby="subHeadingThree" data-bs-parent="#subAccordion">
                                   <div class="accordion-body">
-                                      Content for Figma resources...
+                                    <ul>
+                                      <li>Plugins & Community</li>
+                                  </ul>
                                   </div>
                               </div>
                           </div>
                       </div>
-                      <li><button class="btn btn-link"><i class="bi bi-play-circle"></i> Auto Layout & Figma Components</button></li>
+                      <li>
+                        <button class="btn btn-link" type="button" onclick="showForm()" style="text-decoration: none; color:#4a90e2;font-size:19px;">
+                            <i class="bi bi-play-circle"></i> Auto Layout & Figma Components
+                        </button>
+                    </li>
                   </ul>
-                  <div class="project-info mt-3 p-3 rounded">
+                  <div class="project-info mt-3 rounded">
                       <i class="bi bi-briefcase-fill"></i> 
                       <strong>Project:</strong> Design a simple landing page for a website (desktop only)
                       <p>Design a simple landing page that will promote and give well-designed information about a product or service. You will be using colors and color styles, text and typographical hierarchy, images, effects, and components.</p>
@@ -517,21 +508,35 @@
       </div>
 
       <!-- Second Course -->
-      <div class="accordion-item">
+      <div class="accordion-item" >
           <h2 class="accordion-header" id="headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   <span class="course-title">2. Advanced Figma</span>
                   <ul class="list-unstyled ms-3 mb-0">
-                      <li class="d-inline-flex"><i class="bi bi-folder-fill"></i> 6 Modules</li>
-                      <li class="d-inline-flex"><i class="bi bi-play-circle"></i> 3 Demo videos inside</li>
-                      <li class="d-block"><i class="bi bi-briefcase-fill"></i> Project: Design an advanced landing page with interactive elements</li>
+                      <li class="d-inline-flex"><i class="bi bi-folder-fill"></i> 1 Module</li>
+                      <li class="d-inline-flex"><i class="bi bi-play-circle"></i>1 Demo videos inside</li>
+                      <li class="d-block"><i class="bi bi-briefcase-fill"></i> Project: Create User Persona & wireframe for an onboarding process of a fitness app</li>
                   </ul>
               </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
               data-bs-parent="#courseAccordion">
-              <!-- No accordion body needed -->
+              <div class="accordion-body">
+              <ul class="list-unstyled">
+                <li>
+                    <button class="btn btn-link" type="button" onclick="showForm()" style="text-decoration: none; color:#4a90e2; font-size:19px;">
+                        <i class="bi bi-play-circle"></i> 
+                        Getting Started with UX
+                    </button>
+                </li>
+              </ul>
+              <div class="project-info mt-3 rounded">
+                <i class="bi bi-briefcase-fill"></i> 
+                <strong>Project:</strong> Design a simple landing page for a website (desktop only)
+                <p>Design a simple landing page that will promote and give well-designed information about a product or service. You will be using colors and color styles, text and typographical hierarchy, images, effects, and components.</p>
+            </div>
+              </div>
           </div>
       </div>
 
@@ -542,18 +547,308 @@
                   data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   <span class="course-title">3. Getting into UI & UX</span>
                   <ul class="list-unstyled ms-3 mb-0">
-                      <li class="d-inline-flex"><i class="bi bi-folder-fill"></i> 4 Modules</li>
+                      <li class="d-inline-flex"><i class="bi bi-folder-fill"></i> 5 Modules</li>
                       <li class="d-inline-flex"><i class="bi bi-play-circle"></i> 1 Demo video inside</li>
-                      <li class="d-block"><i class="bi bi-briefcase-fill"></i> Project: Create a complete UI/UX case study</li>
+                      <li class="d-block"><i class="bi bi-briefcase-fill"></i> Project:  Create Events Website & Small Event Planning mobile app</li>
                   </ul>
               </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
               data-bs-parent="#courseAccordion">
-              <!-- No accordion body needed -->
+              <div class="accordion-body">
+                <ul class="list-unstyled">
+                    <div class="accordion" id="subAccordion">
+                        <!-- First Sub-Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="subHeadingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseOne" aria-expanded="false" aria-controls="subCollapseOne">
+                                    <li class="sub-d-inline-flex"><i class="bi bi-file-text"></i> E-commerce Website UX
+                                    </li>
+                                </button>
+                            </h2>
+                            <div id="subCollapseOne" class="accordion-collapse collapse" aria-labelledby="subHeadingOne" data-bs-parent="#subAccordion">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li>Getting started</li>
+                                    <li>Common E-Commerce Website conventions</li>
+                                    <li>Common E-Commerce Website Pages</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second Sub-Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="subHeadingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseTwo" aria-expanded="false" aria-controls="subCollapseTwo">
+                                  <li class="sub-d-inline-flex"><i class="bi bi-file-text"></i> 
+                                    Responsive UX Design</li>
+                                </button>
+                            </h2>
+                            <div id="subCollapseTwo" class="accordion-collapse collapse" aria-labelledby="subHeadingTwo" data-bs-parent="#subAccordion">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li>What is Responsive Design?</li>
+                                    <li>Lets see in practice</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Third Sub-Item -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="subHeadingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseThree" aria-expanded="false" aria-controls="subCollapseThree">
+                                  <li class="sub-d-inline-flex"><i class="bi bi-file-text"></i> Get inspired</li>
+                                </button>
+                            </h2>
+                            <div id="subCollapseThree" class="accordion-collapse collapse" aria-labelledby="subHeadingThree" data-bs-parent="#subAccordion">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li>Design inspirations sources</li>
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <li>
+                      <button class="btn btn-link" type="button" onclick="showForm()" style="text-decoration: none; color:#4a90e2;font-size:19px;">
+                          <i class="bi bi-play-circle"></i> E-commerce Website UI
+                      </button>
+                  </li>
+                    <!------------Fourth Sub-item---------------------->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="subHeadingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseFour" aria-expanded="false" aria-controls="subCollapseFour">
+                            <li class="sub-d-inline-flex"><i class="bi bi-file-text"></i> 
+                              Mobile app UX and UI</li>
+                          </button>
+                      </h2>
+                      <div id="subCollapseFour" class="accordion-collapse collapse" aria-labelledby="subHeadingFour" data-bs-parent="#subAccordion">
+                          <div class="accordion-body">
+                            <ul>
+                              <li>Get familiar with your device</li>
+                              <li>Keep your users engaged and do it properly</li>
+                              <li>Mobile App UX - Part 1</li>
+                              <li>Mobile App UX - Part 2</li>
+                              <li>Mobile App UI</li>
+                          </ul>
+                          </div>
+                      </div>
+                  </div>
+                </ul>
+                <div class="project-info mt-3 rounded">
+                    <i class="bi bi-briefcase-fill"></i> 
+                    <strong>Project:</strong> Design a simple landing page for a website (desktop only)
+                    <p>Design a simple landing page that will promote and give well-designed information about a product or service. You will be using colors and color styles, text and typographical hierarchy, images, effects, and components.</p>
+                </div>
+            </div>
+          </div>
+      </div>
+      <!-- Fourth Course -->
+      <div class="accordion-item" >
+        <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <span class="course-title">4.  Prototyping and Motion</span>
+                <ul class="list-unstyled ms-3 mb-0">
+                    <li class="d-inline-flex"><i class="bi bi-folder-fill"></i> 2 Modules</li>
+                    <li class="d-block"><i class="bi bi-briefcase-fill"></i> Project: Prototyping and animating the website and mobile app you created in the previous course project</li>
+                </ul>
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#courseAccordion">
+            <div class="accordion-body">
+            <ul class="list-unstyled">
+              <div class="accordion" id="subAccordion">
+                <!-- First Sub-Item -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="subHeadingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseOne" aria-expanded="false" aria-controls="subCollapseOne">
+                            <li class="sub-d-inline-flex"><i class="bi bi-file-text"></i> Animation, Transition, and Interactive Components - 1
+                            </li>
+                        </button>
+                    </h2>
+                    <div id="subCollapseOne" class="accordion-collapse collapse" aria-labelledby="subHeadingOne" data-bs-parent="#subAccordion">
+                        <div class="accordion-body">
+                          <ul>
+                            <li>Getting started</li>
+                            <li>Animation & Transition types: Designing the full User Experience</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Sub-Item -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="subHeadingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseTwo" aria-expanded="false" aria-controls="subCollapseTwo">
+                          <li class="sub-d-inline-flex"><i class="bi bi-file-text"></i> 
+                            Animation, Transition, and Interactive Components -2</li>
+                        </button>
+                    </h2>
+                    <div id="subCollapseTwo" class="accordion-collapse collapse" aria-labelledby="subHeadingTwo" data-bs-parent="#subAccordion">
+                        <div class="accordion-body">
+                          <ul>
+                            <li>Interactive Components</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>             
+            </ul>
+            <div class="project-info mt-3 rounded">
+              <i class="bi bi-briefcase-fill"></i> 
+              <strong>Project:</strong> Design a simple landing page for a website (desktop only)
+              <p>Design a simple landing page that will promote and give well-designed information about a product or service. You will be using colors and color styles, text and typographical hierarchy, images, effects, and components.</p>
+          </div>
+            </div>
+        </div>
+    </div>
+    <!---------------Fifth Course------------------------------->
+    <div class="accordion-item" >
+      <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <span class="course-title">5. Adobe XD</span>
+              <ul class="list-unstyled ms-3 mb-0">
+                  <li class="d-inline-flex"><i class="bi bi-folder-fill"></i> 1 Module</li>
+                  <li class="d-block"><i class="bi bi-briefcase-fill"></i> Project: Create an online marketplace where individuals can buy and sell second-hand products and services (website). (Option 1)</li>
+                  <li class="d-block"><i class="bi bi-briefcase-fill"></i> Project: Create an online marketplace where individuals can buy and sell second-hand products and services (website). (Option 2)</li>
+              </ul>
+          </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+          data-bs-parent="#courseAccordion">
+          <div class="accordion-body">
+          <ul class="list-unstyled">
+            <div class="accordion" id="subAccordion">
+              <!-- First Sub-Item -->
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="subHeadingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseOne" aria-expanded="false" aria-controls="subCollapseOne">
+                          <li class="sub-d-inline-flex"><i class="bi bi-file-text"></i> Adobe XD Basics
+                          </li>
+                      </button>
+                  </h2>
+                  <div id="subCollapseOne" class="accordion-collapse collapse" aria-labelledby="subHeadingOne" data-bs-parent="#subAccordion">
+                      <div class="accordion-body">
+                        <ul>
+                          <li>Getting Started with XD</li>
+                          <li>Prototyping and Animations</li>
+                          <li>Practice Problem Statements</li>
+                      </ul>
+                      </div>
+                  </div>
+              </div>
+          </ul>
+          <div class="project-info mt-3 rounded">
+            <i class="bi bi-briefcase-fill"></i> 
+            <strong>Project:</strong> Design a simple landing page for a website (desktop only)
+            <p>Design a simple landing page that will promote and give well-designed information about a product or service. You will be using colors and color styles, text and typographical hierarchy, images, effects, and components.</p>
+        </div>
+        <div class="project-info mt-3 rounded">
+          <i class="bi bi-briefcase-fill"></i> 
+          <strong>Project:</strong> Design a simple landing page for a website (desktop only)
+          <p>Design a simple landing page that will promote and give well-designed information about a product or service. You will be using colors and color styles, text and typographical hierarchy, images, effects, and components.</p>
+      </div>
           </div>
       </div>
   </div>
+    <!-----------------------------Sixth Course---------------------->
+    <div class="accordion-item" >
+      <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              <span class="course-title">6. What's next?</span>
+              <ul class="list-unstyled ms-3 mb-0">
+                  <li class="d-inline-flex"><i class="bi bi-folder-fill"></i> 1 Module</l>
+                  <li class="d-block"><i class="bi bi-briefcase-fill"></i> Project:  Create a meal ingredients delivery app. (Option 1)</li>
+                  <li class="d-block"><i class="bi bi-briefcase-fill"></i> Project:  Create UI of an application that allows users to discover new playlists music, create playlists, and share playlists.Create a music playlist-sharing app. (Option 2)</li>
+              </ul>
+          </button>
+      </h2>
+      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+          data-bs-parent="#courseAccordion">
+          <div class="accordion-body">
+          <ul class="list-unstyled">
+            <div class="accordion" id="subAccordion">
+              <!-- First Sub-Item -->
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="subHeadingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#subCollapseOne" aria-expanded="false" aria-controls="subCollapseOne">
+                          <li class="sub-d-inline-flex"><i class="bi bi-file-text"></i> 
+                            Before starting to apply for work
+                          </li>
+                      </button>
+                  </h2>
+                  <div id="subCollapseOne" class="accordion-collapse collapse" aria-labelledby="subHeadingOne" data-bs-parent="#subAccordion">
+                      <div class="accordion-body">
+                        <ul>
+                          <li>Getting Started</li>
+                          <li>Portfolio - your next project</li>
+                          <li>Starting on your own</li>
+                      </ul>
+                      </div>
+                  </div>
+              </div>
+          </ul>
+          <div class="project-info mt-3 rounded">
+            <i class="bi bi-briefcase-fill"></i> 
+            <strong>Project:</strong> Design a simple landing page for a website (desktop only)
+            <p>Design a simple landing page that will promote and give well-designed information about a product or service. You will be using colors and color styles, text and typographical hierarchy, images, effects, and components.</p>
+        </div>
+          <div class="project-info mt-3 rounded">
+            <i class="bi bi-briefcase-fill"></i> 
+            <strong>Project:</strong> Design a simple landing page for a website (desktop only)
+            <p>Design a simple landing page that will promote and give well-designed information about a product or service. You will be using colors and color styles, text and typographical hierarchy, images, effects, and components.</p>
+        </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+<!-- Overlay for the form -->
+<div id="newOverlay" class="new-overlay"></div>
+
+<!-- Hidden form initially -->
+<div class="new-form-container" id="newFormContainer" style="display:none;">
+    <div class="new-form-content">
+        <span class="new-form-close-btn" onclick="hideForm()">&times;</span>
+        <h5 class="new-form-heading">Unlock Demo Video Form</h5>
+        <form>
+            <div class="mb-3">
+                <label for="newName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="newName" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="newEmail" class="form-label">Email Id</label>
+                <input type="email" class="form-control" id="newEmail" placeholder="Enter your email id">
+            </div>
+            <div class="mb-3">
+                <label for="newPhone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="newPhone" placeholder="Enter your phone number">
+            </div>
+            <div class="mb-3">
+                <label for="newEducation" class="form-label">Education</label>
+                <select class="form-select" id="newEducation">
+                    <option value="">Select your education</option>
+                    <option value="bba">BBA</option>
+                    <option value="bbm">BBM</option>
+                    <option value="bsc">BSc</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="newYear" class="form-label">Year of Graduation</label>
+                <select class="form-select" id="newYear">
+                    <option value="">Select your year of graduation</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="custom-btn-dwn w-100">Unlock Demo Video</button>
+            </div>
+        </form>
+    </div>
 </div>
 
 
