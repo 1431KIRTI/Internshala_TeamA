@@ -2,23 +2,50 @@ body {
     background-color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
+  
+
+.modal-dialog {
+    max-width: 500px; /* Adjust as needed */
+    margin: auto;
+  }
+  
+  .modal-content {
+    text-align: center; /* Center the text inside the modal */
+  }
+  
+
+
 /* Hide the navbar by default */
 .navbar-fixed {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
     display: none;
-    transition: top 0.3s;
-    /* Smooth transition when showing/hiding */
-    z-index: 1000;
-    /* Ensure navbar is above other content */
+    transition: top 0.3s;/* Smooth transition when showing/hiding */
+    z-index: 1030;/* Ensure navbar is above other content */
 }
+/* Prevent body shift when modal is open */
+body.modal-open {
+    padding-right: 0 !important;
+  }
+  
+  /* Ensure modal backdrop is behind the navbar */
+  .modal-backdrop {
+    z-index: 1020;
+  }
 
 /* Class to show the navbar */
 .navbar-fixed.show {
     display: block;
 }
+
+
 
 /* Dummy sections for demonstration */
 .section {
@@ -39,8 +66,7 @@ body {
 
 /* Adjust spacing between dropdown items in the navbar */
 .navbar-nav .nav-item {
-    margin-right: 30px;
-    /* Adjust the margin as needed to increase the distance */
+    margin-right: 30px;/* Adjust the margin as needed to increase the distance */
 }
 
 .navbar-nav .nav-link {
@@ -52,6 +78,28 @@ body {
 .navbar-nav .nav-link:hover {
     color: #007bff;
 }
+.container-fluid {
+    max-width: 1400px; /* Adjust this width as needed */
+    margin: auto; /* Center the container */
+}
+.navbar {
+    background-color: #fff; /* Adjust background color if needed */
+  }
+
+  .navbar-collapse {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown-menu {
+    min-width: 300px; /* Adjust width as needed */
+    max-width: 1400px; /* Adjust width as needed */
+  }
 
 /* Hide all sub-menus by default */
 .sub-menu {
@@ -224,19 +272,22 @@ body {
     background: radial-gradient(70.31% 230.67% at 70.31% 49.89%, #0f96b4 0, #5a0b99 100%);
     padding: 95px 0;
     color: white;
+    position: relative;
 }
-
+.text-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 /* Text Section */
 .text-section h1 {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
-    margin-top: -100px;
+    margin-top: -30px;
 }
 
-.text-section h3 {
-    font-weight: bold;
-}
 
 /* Button Group */
 .button-group {
@@ -247,14 +298,14 @@ body {
 
 /* Wrapper for Buttons and Text */
 .custom-btn-wrapper {
-    margin-top: -170px;
-    margin-left: 40px;
-    /* Adds left margin to the buttons */
+    margin-top: -90px;
+    margin-left: 40px;/* Adds left margin to the buttons */
     text-align: center;
+    display: inline-block;
 }
 
 /* Custom Button Styles */
-.custom-btn {
+.custom-btn1 {
     font-weight: 700;
     position: relative;
     background: rgba(255, 255, 255, 0.136);
@@ -264,46 +315,56 @@ body {
     overflow: hidden;
     z-index: 1;
     display: inline-block;
-    border: none;
-    /* Ensure there's no border */
-    cursor: text;
-    /* Ensure the cursor stays as a text line */
+    border: none; /* Ensure there's no border */
+    cursor: text;/* Ensure the cursor stays as a text line */
 }
 
 /* Disable hover effects on the button */
-.custom-btn:hover {
-    background: rgba(255, 255, 255, 0.136);
-    /* Keeps the same background on hover */
-    color: white;
-    /* Keeps the text color the same on hover */
-    cursor: text;
-    /* Keeps the cursor as a text line */
+.custom-btn1:hover {
+    background: rgba(255, 255, 255, 0.136);/* Keeps the same background on hover */
+    color: white;/* Keeps the text color the same on hover */
+    cursor: text;/* Keeps the cursor as a text line */
 }
 
 /* Image Section */
 .image-section img {
     max-width: 100%;
-    height: 350px;
+    height: 300px;
     display: block;
-    margin: -25px auto;
+    margin: -40px auto;
 }
-<<<<<<< HEAD
+/* Centering content */
+.header-section .row {
+    max-width: 1400px; /* Max width for centering */
+    margin: 0 auto; /* Centering the content */
+}
+@media (max-width: 768px) {
+    .text-section h1, .text-section h3 {
+        margin-left: 0;
+        text-align: center;
+    }
 
-.custom-container {
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.custom-container1 {
     position: absolute;
-    top: 520px;
-    /* Adjust to move half inside the header */
+    top: 450px;/* Adjust to move half inside the header */
     left: 50%;
     transform: translateX(-50%);
-    width: 97%;
-    /* Smaller width than the header */
+    width: 93%;/* Smaller width than the header */
     background-color: white;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1300px; /* Maximum width of the container */
+    min-width: 300px; /* Minimum width of the container */
 }
 
-.info-block {
+.info-block1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -318,7 +379,7 @@ body {
     /* Align items vertically centered */
 }
 
-.info-block i {
+.info-block1 i {
     font-size: 24px;
     /* Adjust icon size as needed */
     color: #007bff;
@@ -326,50 +387,31 @@ body {
     /* Space between icon and text */
 }
 
-.info-text {
+.info-text1 {
     font-size: 15px;
     display: flex;
     flex-direction: column;
 }
 
-.info-text div {
+.info-text1 div {
     margin-bottom: 5px;
     /* Space between lines of text */
 }
 
-.apply-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.apply-block .btn {
-    font-weight: bold;
-}
 
-.applied-info {
-    font-size: 14px;
-    /* Adjust as needed */
-    color: #6c757d;
-    /* Optional: Text color */
-    text-align: center;
-    margin-top: 5px;
-    /* Space between button and text */
+.applied-info1 {
+    font-size: 14px;/* Adjust as needed */
 }
 
 .special-text {
-    background-color: #fffefc;
-    /* Light orange background */
-    border: 1px solid #FFA500;
-    /* Orange border */
-    color: #8B4513;
-    /* Brown text */
-    padding: 1px 6px;
-    /* Padding inside the box */
-    border-radius: 4px;
-    /* Rounded corners */
-    display: inline-block;
-    /* Makes the box fit the text */
+    background-color: #fffefc;/* Light orange background */
+    border: 1px solid #FFA500;/* Orange border */
+    color: #8B4513;/* Brown text */
+    padding: 1px 6px;/* Padding inside the box */
+    border-radius: 4px;/* Rounded corners */
+    display: inline-block;/* Makes the box fit the text */
+    width: max-content;
 }
 
 .stroke {
@@ -382,19 +424,8 @@ body {
     font-weight: 400;
 }
 
-.apply-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.applied-info {
-    margin-top: 10px;
-    /* Space between button and text */
-    text-align: center;
-}
-
-.applied-info i {
+.applied-info1 i {
+    font-size: 14px;
     display: block;
 }
 
@@ -402,10 +433,12 @@ body {
     display: flex;
 }
 
-.number {
+.number1 {
     font-weight: bold;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue";
     color: #5c6166;
 }
+
 .custom-footer-container {
     background-color: #2b2828;
     /* Black background for the entire footer container */
@@ -418,10 +451,10 @@ body {
 }
 
 .footer {
-    padding: 20px 0;
-    /* Padding within the footer */
-    margin-left: 40px;
-    /* Adds left margin to the buttons */
+    padding: 20px 0;/* Padding within the footer */
+    margin-left: 40px;/* Adds left margin to the buttons */
+    max-width: 1400px; /* Adjust this width as needed */
+    margin: 0 auto; /* Center the container */
 }
 
 .upper-section {
@@ -490,7 +523,99 @@ ul li {
     margin-right: 0;
     /* Remove margin after the last icon */
 }
-=======
+
+
+.custom-container1 {
+    margin-top: 5px; /* Default margin for larger screens */
+}
+
+@media (max-width: 991px) {
+    .custom-container1 {
+        margin-top: 30px; /* Adjust margin for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-btn1{
+        margin-top: 30px;
+        font-size: x-small;
+        display:flow-root;
+    }
+    .header-section .text-section{
+        align-items: left;
+        margin-bottom: 50px;
+    }
+    .custom-container1 {
+        margin-top: 50px; /* Further adjust for extra small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-btn1{
+        margin-top: 30px;
+        font-size: x-small;
+        display:grid;
+    }
+    .header-section .text-section{
+        align-items: left;
+        margin-bottom: 50px;
+    }
+    
+    .custom-container1 {
+        margin-top: 220px; /* Additional spacing for very small screens */
+    }
+    .info-block1{
+        text-align: center;
+    }
+    .special-text{
+        align-self: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .header-section .text-section{
+        align-items: left;
+        margin-bottom: 35px;
+    }
+    .custom-btn1{
+        margin-top: 10px;
+        font-size: x-small;
+        display:grid;
+    }
+    .custom-container1 {
+        margin-top: 330px; /* Spacing for the smallest screens */
+    }
+    .info-block1{
+        text-align: center;
+    }
+    .special-text{
+        align-self: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Top career options in UI/UX Design*/
 h2 {
     font-weight: bold;
@@ -686,7 +811,7 @@ font-size: 30px;
 font-weight: bold;
 cursor: pointer;
 }
-.custom-btn-dwn {
+.custom-btn {
 background-color: #4a90e2; /* Custom color */
 color: white; /* Text color */
 border: none; /* Remove border */
@@ -698,6 +823,7 @@ padding:5px;
     flex-direction: column;
     align-items: flex-start;
     padding: 0.4rem; /* Adjust padding as needed */
+    position: relative; /* Ensure relative positioning for the toggle button */
 }
 
 .accordion-button ul {
@@ -737,7 +863,7 @@ padding:5px;
 .accordion-item {
     border: 1px solid #ddd;
     border-radius: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .accordion-body {
@@ -746,7 +872,7 @@ padding:5px;
 
 /* Styling the icons */
 .accordion-body i {
-    margin-right: 10px;
+    margin-right: 0px;
     color: #555;
 }
 
@@ -762,8 +888,7 @@ padding:5px;
 }
 
 .accordion-body ul li {
-    list-style: none;
-    padding: 0px 0; /* Reduce padding between list items */
+    padding: 0; /* Reduce padding between list items */
 }
 
 .accordion-body ul .accordion-item {
@@ -784,33 +909,173 @@ padding:5px;
 }
 
 .accordion-body .btn-link {
-    text-decoration: none;
-    color: #4a90e2;
+    color: #3d7ac0bb;
     font-size: 17px;
     display: flex;
-    align-items: center;
+    align-items:left;
+    
 }
 
 .accordion-body .btn-link i {
     margin-right: 10px;
     font-size: 20px;
-    color:#4a90e2;
+    color:#4a91e2bb;
+    margin-left:-10px;
 }
 
-.accordion-body .project-info {
+#collapseOne .project-info {
     margin-top: 20px;
     background-color: #ebf2fc;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 16px;
+    margin-left:0;
+}
+
+#collapseOne .project-info i {
+    margin-right: 10px;
+}
+#collapseTwo .project-info {
+    margin-top: 20px;
+    background-color: #ebf2fc;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 16px;
+}
+#collapseTwo .project-info  i{
+    margin-right: 10px;
+} 
+
+#collapseThree .project-info {
+    margin-top: 20px;
+    background-color: #ebf2fc;
+    padding: 10px;
+    border-radius: 0px;
     font-size: 16px;
 }
 
-.accordion-body .project-info i {
+#collapseThree .project-info  i{
     margin-right: 10px;
 }
+
+#collapseFour .project-info {
+    margin-top: 20px;
+    background-color: #ebf2fc;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 16px;
+}
+
+#collapseFour .project-info  i{
+    margin-right: 10px;
+}
+
+#collapseFive .project-info {
+    margin-top: 20px;
+    background-color: #ebf2fc;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 16px;
+}
+
+#collapseFive .project-info  i{
+    margin-right: 10px;
+}
+
+#collapseSix .project-info {
+    margin-top: 20px;
+    background-color: #ebf2fc;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 16px;
+}
+
+#collapseSix .project-info  i{
+    margin-right: 10px;
+}
+
 .accordion-header p{
     font-size: 17px;
 }
+.accordion-button::after {
+    align-self: flex-start; /* This ensures the toggle icon stays at the top */
+}
+.sub-d-inline-flex i{
+    margin-right:5px;
+}
+#subCollapseOne .accordion-body ul{
+    list-style-type: disc;
+    margin-left:10px;
+}
+#subCollapseTwo .accordion-body ul{
+    list-style-type: disc;
+    margin-left:10px;
+}
+#subCollapseThree .accordion-body ul{
+    list-style-type: disc;
+    margin-left:10px;
+}
+#subCollapseFour .accordion-body ul{
+    list-style-type: disc;
+    margin-left:10px;
+}
+/* Accordion Form starts*/
+.new-overlay {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.new-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.new-form-content {
+    position: relative;
+}
+
+.new-form-heading {
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.new-form-close-btn {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.custom-btn-dwn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+/*Accordion form ends*/
+/*Accordion styling ends*/
+.custom-margin {
+    margin-top: 130px; /* or any value you prefer */
+  }
 
 /* ai tools start */
 
@@ -903,4 +1168,3 @@ padding:5px;
     color: #333;
 }
 /* skills end */
->>>>>>> 63cd34f47f9b4086b08e3692b95a0db99666af33
