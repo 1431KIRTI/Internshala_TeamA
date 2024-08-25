@@ -1,13 +1,18 @@
+
+
 body {
     background-color: white;
 }
 
+<<<<<<< HEAD
 html {
     scroll-behavior: smooth;
   }
 
   
 
+=======
+>>>>>>> 23630aba083a2935a5c3545442bbec8e8cdd12f1
 .modal-dialog {
     max-width: 500px; /* Adjust as needed */
     margin: auto;
@@ -78,10 +83,13 @@ body.modal-open {
 .navbar-nav .nav-link:hover {
     color: #007bff;
 }
+<<<<<<< HEAD
 .container-fluid {
     max-width: 1400px; /* Adjust this width as needed */
     margin: auto; /* Center the container */
 }
+=======
+>>>>>>> 23630aba083a2935a5c3545442bbec8e8cdd12f1
 .navbar {
     background-color: #fff; /* Adjust background color if needed */
   }
@@ -525,6 +533,7 @@ ul li {
 }
 
 
+<<<<<<< HEAD
 .custom-container1 {
     margin-top: 5px; /* Default margin for larger screens */
 }
@@ -594,6 +603,10 @@ ul li {
 }
 
 
+=======
+
+
+>>>>>>> 23630aba083a2935a5c3545442bbec8e8cdd12f1
 
 
 
@@ -1167,4 +1180,8 @@ padding:5px;
     font-weight: 500;
     color: #333;
 }
+<<<<<<< HEAD
 /* skills end */
+=======
+/* skills end */
+>>>>>>> 23630aba083a2935a5c3545442bbec8e8cdd12f1

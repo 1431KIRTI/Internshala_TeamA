@@ -140,4 +140,8 @@ document.getElementById('overlay').style.display = 'none'; // Hide the overlay
                        option.textContent = year;
                        yearSelect.appendChild(option);
                    }
+<<<<<<< HEAD
    
+=======
+   
+>>>>>>> 23630aba083a2935a5c3545442bbec8e8cdd12f1
