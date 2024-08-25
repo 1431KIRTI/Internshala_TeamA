@@ -1088,3 +1088,68 @@ padding:5px;
     color: #333;
 }
 /* skills end */
+/* experts start */
+.section-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.cards-v1 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card-v1 {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 20px;
+    width: 350px; /* Fixed width for all cards */
+    height: 186px; /* Fixed height for all cards */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align content to the top */
+    position: relative; /* Make the card a positioned element */
+}
+.faculty-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.faculty-details .image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.faculty-details .name {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.faculty-details .designation {
+    font-size: 0.9rem;
+    color: #666;
+}
+.separator {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    position: absolute; /* Position relative to the card */
+    bottom: 70px; /* Fixed distance from the bottom of the card */
+    left: 0;
+}
+.companies {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: left;
+    position: absolute; /* Position relative to the card */
+    bottom: 20px; /* Fixed distance from the bottom of the card */
+    left: 20px;
+    right: 0;
+}
+.companies .image {
+    max-height: 40px;
+}
+/* experts end */
