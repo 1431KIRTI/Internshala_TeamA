@@ -19,8 +19,9 @@ h6{
 }
 
 .slider-content h1 {
+    margin-top: 10%;
     color: rgb(0, 0, 0);
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .slider-content p {
