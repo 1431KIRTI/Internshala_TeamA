@@ -1,0 +1,112 @@
+.slider-container {
+    width: 90%;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+}
+h6{
+    color: #f39c12;
+}
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slider-content {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.slider-content h1 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.slider-content p {
+    color: #888888;
+}
+.slide {
+    display: flex;
+    min-width: 100%;
+}
+.review-box {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+.review-box img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+.review-box h3 {
+    margin: 10px 0 5px;
+}
+.review-box h4 {
+    margin: 5px 0;
+    color: #777;
+}
+.review-box p {
+    color: #555;
+}
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.navigation button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    padding: 10px;
+}
+ 
+        .company-icons {
+            overflow: hidden;
+            position: relative;
+            white-space: nowrap;
+        }
+
+        .marquee {
+            display: flex;
+            animation: scroll 30s linear infinite;
+        }
+
+        .marquee-item {
+            padding: 0 15px;
+            display: inline-block;
+        }
+
+        @keyframes scroll {
+            from {transform: translateX(0%);}
+            to {transform: translateX(-100%);}
+        }
+
+        .company-icon {
+            height: 50px;
+            object-fit: contain;
+        }
+
+        .info-box {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .info-box h5 {
+            margin: 10px 0;
+        }
+   
