@@ -4,15 +4,6 @@ body {
     background-color: white;
 }
 
-<<<<<<< HEAD
-html {
-    scroll-behavior: smooth;
-  }
-
-  
-
-=======
->>>>>>> 23630aba083a2935a5c3545442bbec8e8cdd12f1
 .modal-dialog {
     max-width: 500px; /* Adjust as needed */
     margin: auto;
@@ -30,27 +21,17 @@ html {
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
     display: none;
-    transition: top 0.3s;/* Smooth transition when showing/hiding */
-    z-index: 1030;/* Ensure navbar is above other content */
+    transition: top 0.3s;
+    /* Smooth transition when showing/hiding */
+    z-index: 1000;
+    /* Ensure navbar is above other content */
 }
-/* Prevent body shift when modal is open */
-body.modal-open {
-    padding-right: 0 !important;
-  }
-  
-  /* Ensure modal backdrop is behind the navbar */
-  .modal-backdrop {
-    z-index: 1020;
-  }
 
 /* Class to show the navbar */
 .navbar-fixed.show {
     display: block;
 }
-
-
 
 /* Dummy sections for demonstration */
 .section {
@@ -83,13 +64,6 @@ body.modal-open {
 .navbar-nav .nav-link:hover {
     color: #007bff;
 }
-<<<<<<< HEAD
-.container-fluid {
-    max-width: 1400px; /* Adjust this width as needed */
-    margin: auto; /* Center the container */
-}
-=======
->>>>>>> 23630aba083a2935a5c3545442bbec8e8cdd12f1
 .navbar {
     background-color: #fff; /* Adjust background color if needed */
   }
@@ -413,13 +387,18 @@ body.modal-open {
 }
 
 .special-text {
-    background-color: #fffefc;/* Light orange background */
-    border: 1px solid #FFA500;/* Orange border */
-    color: #8B4513;/* Brown text */
-    padding: 1px 6px;/* Padding inside the box */
-    border-radius: 4px;/* Rounded corners */
-    display: inline-block;/* Makes the box fit the text */
-    width: max-content;
+    background-color: #fffefc;
+    /* Light orange background */
+    border: 1px solid #FFA500;
+    /* Orange border */
+    color: #8B4513;
+    /* Brown text */
+    padding: 1px 6px;
+    /* Padding inside the box */
+    border-radius: 4px;
+    /* Rounded corners */
+    display: inline-block;
+    /* Makes the box fit the text */
 }
 
 .stroke {
@@ -459,10 +438,10 @@ body.modal-open {
 }
 
 .footer {
-    padding: 20px 0;/* Padding within the footer */
-    margin-left: 40px;/* Adds left margin to the buttons */
-    max-width: 1400px; /* Adjust this width as needed */
-    margin: 0 auto; /* Center the container */
+    padding: 20px 0;
+    /* Padding within the footer */
+    margin-left: 40px;
+    /* Adds left margin to the buttons */
 }
 
 .upper-section {
@@ -533,80 +512,8 @@ ul li {
 }
 
 
-<<<<<<< HEAD
-.custom-container1 {
-    margin-top: 5px; /* Default margin for larger screens */
-}
-
-@media (max-width: 991px) {
-    .custom-container1 {
-        margin-top: 30px; /* Adjust margin for smaller screens */
-    }
-}
-
-@media (max-width: 768px) {
-    .custom-btn1{
-        margin-top: 30px;
-        font-size: x-small;
-        display:flow-root;
-    }
-    .header-section .text-section{
-        align-items: left;
-        margin-bottom: 50px;
-    }
-    .custom-container1 {
-        margin-top: 50px; /* Further adjust for extra small screens */
-    }
-}
-
-@media (max-width: 576px) {
-    .custom-btn1{
-        margin-top: 30px;
-        font-size: x-small;
-        display:grid;
-    }
-    .header-section .text-section{
-        align-items: left;
-        margin-bottom: 50px;
-    }
-    
-    .custom-container1 {
-        margin-top: 220px; /* Additional spacing for very small screens */
-    }
-    .info-block1{
-        text-align: center;
-    }
-    .special-text{
-        align-self: center;
-    }
-}
-
-@media (max-width: 320px) {
-    .header-section .text-section{
-        align-items: left;
-        margin-bottom: 35px;
-    }
-    .custom-btn1{
-        margin-top: 10px;
-        font-size: x-small;
-        display:grid;
-    }
-    .custom-container1 {
-        margin-top: 330px; /* Spacing for the smallest screens */
-    }
-    .info-block1{
-        text-align: center;
-    }
-    .special-text{
-        align-self: center;
-    }
-}
 
 
-=======
-
-
->>>>>>> 23630aba083a2935a5c3545442bbec8e8cdd12f1
 
 
 
@@ -1180,8 +1087,4 @@ padding:5px;
     font-weight: 500;
     color: #333;
 }
-<<<<<<< HEAD
 /* skills end */
-=======
-/* skills end */
->>>>>>> 23630aba083a2935a5c3545442bbec8e8cdd12f1
