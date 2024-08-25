@@ -1,0 +1,1090 @@
+
+
+body {
+    background-color: white;
+}
+
+.modal-dialog {
+    max-width: 500px; /* Adjust as needed */
+    margin: auto;
+  }
+  
+  .modal-content {
+    text-align: center; /* Center the text inside the modal */
+  }
+  
+
+
+/* Hide the navbar by default */
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    transition: top 0.3s;
+    /* Smooth transition when showing/hiding */
+    z-index: 1000;
+    /* Ensure navbar is above other content */
+}
+
+/* Class to show the navbar */
+.navbar-fixed.show {
+    display: block;
+}
+
+/* Dummy sections for demonstration */
+.section {
+    height: 800px;
+    /* Adjust height as needed */
+    padding: 20px;
+}
+
+.section:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Navbar General Styling */
+.navbar-brand img {
+    height: 60px;
+    width: 190px;
+}
+
+/* Adjust spacing between dropdown items in the navbar */
+.navbar-nav .nav-item {
+    margin-right: 30px;/* Adjust the margin as needed to increase the distance */
+}
+
+.navbar-nav .nav-link {
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+.navbar {
+    background-color: #fff; /* Adjust background color if needed */
+  }
+
+  .navbar-collapse {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown-menu {
+    min-width: 300px; /* Adjust width as needed */
+    max-width: 1400px; /* Adjust width as needed */
+  }
+
+/* Hide all sub-menus by default */
+.sub-menu {
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Show the dropdown menu on hover */
+.navbar-nav>li:hover>.dropdown-menu {
+    display: block;
+    /* Show the dropdown menu */
+}
+
+/* Show the sub-menu on hover */
+.col-3 .dropdown-item:hover+.col-9 .sub-menu {
+    display: block;
+}
+
+/* Ensure only the corresponding sub-menu is shown */
+.col-3 .dropdown-item:hover~.col-9 #popular,
+.col-3 .dropdown-item:hover~.col-9 #programming,
+.col-3 .dropdown-item:hover~.col-9 #buisness {
+    display: none;
+}
+
+.col-3 .dropdown-item:hover~.col-9 .sub-menu#popular,
+.col-3 .dropdown-item:hover~.col-9 .sub-menu#programming,
+.col-3 .dropdown-item:hover~.col-9 .sub-menu#buisness {
+    display: block;
+}
+
+/* Styling for sub-items */
+.sub-menu li {
+    border-left: 2px solid #B0E2FF;
+    padding: 1px 0;
+}
+
+/* Remove bullets from sub-items */
+.sub-menu li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Additional styling to enhance appearance */
+.sub-menu li a:hover {
+    color: #007bff;
+    /* color on hover */
+}
+
+/* Basic styling for dropdown items */
+.col-3 .dropdown-item {
+    position: relative;
+    display: block;
+    width: calc(100% + 25px);
+    /* Slightly larger width for the hover effect */
+    padding: 10px 20px 10px 30px;
+    /* Add padding for spacing */
+    color: #000;
+    background-color: transparent;
+    text-align: left;
+    border: none;
+}
+
+.navbar-nav .dropdown-menu {
+    border-radius: 10px;
+    background-color: #ffffff;
+    min-width: 800px;
+}
+
+/* Hover effect with dark sky blue on the left and light sky blue on the remaining part */
+.col-3 .dropdown-item:hover {
+    background: linear-gradient(to right, #87CEEB 30%, #B0E2FF 70%);
+    /* Dark sky blue (#87CEEB) and light sky blue (#B0E2FF) */
+    color: black;
+    /* White text */
+}
+
+/* Add the > sign on the right side */
+.col-3 .dropdown-item:hover::after {
+    content: '>';
+    position: absolute;
+    right: 10px;
+    color: black;
+    /* White color for the arrow */
+    font-weight: bold;
+}
+
+.mega-menu .dropdown-item {
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+/* Styles for the entire Placement Guarantee Courses dropdown menu */
+#placementCoursesDropdown+.dropdown-menu.mega-menu {
+    width: 500px;
+    /* Adjust the width of the dropdown menu */
+    min-width: auto;
+    overflow-y: auto;
+    /* Allows scrolling if content exceeds max height */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds shadow for depth */
+}
+
+/* Specific styles for Placement Guarantee Courses dropdown */
+#placementCoursesDropdown+.dropdown-menu.mega-menu li a.dropdown-item {
+    font-size: large;
+    display: block;
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+/* Specific styles for Placement Guarantee Courses dropdown */
+#placementCoursesDropdown+.dropdown-menu.mega-menu li a.dropdown-item:hover {
+    background: linear-gradient(to right, #B0E2FF 30%, #87CEEB 70%);
+    /* Dark sky blue (#87CEEB) and light sky blue (#B0E2FF) */
+    color: #007bff;
+    /* Change text color on hover */
+    display: block;
+}
+
+#placementCoursesDropdown+.dropdown-menu.mega-menu li a.dropdown-item {
+    width: 100%;
+    display: block;
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.dropdown-icon {
+    height: 16px;
+    /* Make the icon smaller */
+    width: 16px;
+    margin-right: 10px;
+    object-fit: contain;
+    /* Ensure the logo doesn't get distorted */
+}
+
+/* Badge Styling */
+.badge {
+    font-size: 12px;
+}
+/* Login Button */
+.btn-outline-primary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-success:hover {
+    color: white;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+/* Login Modal Styling */
+.modal-content {
+    border-radius: 0;
+    border: 1px solid #ddd;
+}
+
+
+/* Header Section Background */
+.header-section {
+    background: radial-gradient(70.31% 230.67% at 70.31% 49.89%, #0f96b4 0, #5a0b99 100%);
+    padding: 95px 0;
+    color: white;
+    position: relative;
+}
+.text-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Text Section */
+.text-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+
+
+/* Button Group */
+.button-group {
+    display: flex;
+    gap: 6px;
+    cursor: text;
+}
+
+/* Wrapper for Buttons and Text */
+.custom-btn-wrapper {
+    margin-top: -90px;
+    margin-left: 40px;/* Adds left margin to the buttons */
+    text-align: center;
+    display: inline-block;
+}
+
+/* Custom Button Styles */
+.custom-btn1 {
+    font-weight: 700;
+    position: relative;
+    background: rgba(255, 255, 255, 0.136);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-block;
+    border: none; /* Ensure there's no border */
+    cursor: text;/* Ensure the cursor stays as a text line */
+}
+
+/* Disable hover effects on the button */
+.custom-btn1:hover {
+    background: rgba(255, 255, 255, 0.136);/* Keeps the same background on hover */
+    color: white;/* Keeps the text color the same on hover */
+    cursor: text;/* Keeps the cursor as a text line */
+}
+
+/* Image Section */
+.image-section img {
+    max-width: 100%;
+    height: 300px;
+    display: block;
+    margin: -40px auto;
+}
+/* Centering content */
+.header-section .row {
+    max-width: 1400px; /* Max width for centering */
+    margin: 0 auto; /* Centering the content */
+}
+@media (max-width: 768px) {
+    .text-section h1, .text-section h3 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.custom-container1 {
+    position: absolute;
+    top: 450px;/* Adjust to move half inside the header */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 93%;/* Smaller width than the header */
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1300px; /* Maximum width of the container */
+    min-width: 300px; /* Minimum width of the container */
+}
+
+.info-block1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    /* Ensure text is aligned to the left */
+    padding: 10px;
+}
+
+.info-content {
+    display: flex;
+    align-items: center;
+    /* Align items vertically centered */
+}
+
+.info-block1 i {
+    font-size: 24px;
+    /* Adjust icon size as needed */
+    color: #007bff;
+    margin-right: 10px;
+    /* Space between icon and text */
+}
+
+.info-text1 {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-text1 div {
+    margin-bottom: 5px;
+    /* Space between lines of text */
+}
+
+
+
+.applied-info1 {
+    font-size: 14px;/* Adjust as needed */
+}
+
+.special-text {
+    background-color: #fffefc;
+    /* Light orange background */
+    border: 1px solid #FFA500;
+    /* Orange border */
+    color: #8B4513;
+    /* Brown text */
+    padding: 1px 6px;
+    /* Padding inside the box */
+    border-radius: 4px;
+    /* Rounded corners */
+    display: inline-block;
+    /* Makes the box fit the text */
+}
+
+.stroke {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.change-color {
+    color: #0c8d42;
+    font-weight: 400;
+}
+
+.applied-info1 i {
+    font-size: 14px;
+    display: block;
+}
+
+.applied-text {
+    display: flex;
+}
+
+.number1 {
+    font-weight: bold;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue";
+    color: #5c6166;
+}
+
+.custom-footer-container {
+    background-color: #2b2828;
+    /* Black background for the entire footer container */
+    color: #ffffff;
+    /* White text color */
+    padding: 20px 0;
+    /* Padding around the footer container */
+    margin-top: 100px;
+    font-size: 15px;
+}
+
+.footer {
+    padding: 20px 0;
+    /* Padding within the footer */
+    margin-left: 40px;
+    /* Adds left margin to the buttons */
+}
+
+.upper-section {
+    height: 80%;
+    /* Upper section takes up 80% of the footer height */
+}
+
+.lower-section {
+    height: 20%;
+    /* Lower section takes up 20% of the footer height */
+    display: flex;
+    align-items: center;
+    /* Centers the content vertically */
+}
+
+.white-line {
+    border-top: 1px solid #ffffff;
+    /* Thin white line */
+    margin: 10px 0;
+    /* Space around the line */
+}
+
+h6 {
+    font-weight: bold;
+    /* Makes section headings bold */
+    margin-bottom: 10px;
+    /* Adds space below the headings */
+    margin-left: 10px;
+}
+
+ul {
+    padding-left: 0;
+    /* Removes default padding */
+}
+
+ul li {
+    list-style-type: none;
+    /* Removes bullet points from list items */
+    text-align: left;
+    /* Align text to the left */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+}
+
+.lower-section div {
+    color: #ffffff;
+    /* Ensures text color is white in the lower section */
+}
+
+.btn-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-link i {
+    font-size: 1.5em;
+    /* Adjust icon size */
+}
+
+.custom-footer-container .social-icons li {
+    margin-right: -10px;
+    /* Adjust this value to reduce spacing */
+}
+
+.custom-footer-container .social-icons li:last-child {
+    margin-right: 0;
+    /* Remove margin after the last icon */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Top career options in UI/UX Design*/
+h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card-img-top {
+    width: 100px;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.card-body {
+    padding: 1rem; 
+}
+
+#ui-uxdes1, #ui-uxdes2 {
+    font-weight: bold;
+}
+
+.large-img {
+    width: 80%;
+    max-width: 90%; /* Ensure it doesn't exceed container width */
+    height: auto;
+}
+
+.col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Card styling for the Career Options section */
+.career-options .card {
+    margin-bottom: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Card styling for the Explore More section */
+.explore-more-card {
+    border: 2px solid white; /* White borders for the Explore More section */
+    margin-bottom: 0;
+    position: relative;
+}
+.explore-more-middle-border {
+    border-left: 1px solid rgb(186, 184, 184); /* Set a black left border for the middle card */
+    padding-left: 20px; /* Add padding to make space for border */
+    margin-left: -10px; /* Adjust this value to move the border left */
+    margin-right: 10px; /* Adjust this value to provide space on the right */
+}
+
+/* Lightbox modal style */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 10px; /* Padding at the top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    /* Remove the background and padding */
+}
+
+.lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: -45px; /* Move the close button higher */
+    right: -20px; /* Move the close button further right */
+    color: white;
+    font-size: 35px; /* Increased size */
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+.explore-more-heading {
+    margin-top: 60px; /* Adjust this value to your preference */
+}
+/* Styling for the Key Benefits section */
+.benefit-item {
+background-color: white; /* Light background for each item */
+padding: 4px; /* Adjusted padding to reduce space inside the items */
+display: flex;
+align-items:left;
+row-gap: -30px;
+margin-bottom: 10px; /* Reduced bottom margin between items */
+}
+
+.benefit-text {
+margin: 0;
+font-size: 16px;
+font-weight: 500;
+}
+
+.benefit-img {
+width: 40px; /* Adjust the size of the images as needed */
+height: auto;
+margin-right: 10px; /* Space between image and text */
+}
+.download-section {
+margin-top: 5px;
+text-align: left; /* Align content to the left */
+}
+
+.download-btn {
+display: inline-flex;
+align-items: center;
+background-color: white;
+color: #4a90e2;
+border: 2px solid #4a90e2;
+border-radius: 5px;
+padding: 5px 10px;
+font-size: 16px;
+text-decoration: none; /* Removes underline */
+cursor: pointer;
+}
+.download-text {
+font-weight: 500; /* Set a lighter weight than bold */
+}
+
+.download-btn i {
+margin-left: 10px; /* Space between text and icon */
+font-size: 16px;
+}
+
+.download-btn:hover {
+box-shadow: 0 px 5px rgba(0, 0, 0, 0.705);
+}
+
+.download-btn:focus {
+outline: none; /* Remove default outline */
+}
+
+/* Form styling */
+.overlay {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 999; /* Just below the form */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.form-container {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 400px;
+background-color: white;
+border: 2px solid #ccc;
+border-radius: 10px;
+padding: 20px;
+z-index: 1000; /* Higher than overlay */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-content {
+position: relative;
+}
+
+.form-heading {
+text-align: left; /* Align heading to the left */
+margin-bottom: 20px;
+font-weight: 600;
+}
+
+.form-close-btn {
+position: absolute;
+top: -10px; /* Move closer to the top */
+right: 10px;
+color: black;
+font-size: 30px;
+font-weight: bold;
+cursor: pointer;
+}
+.custom-btn {
+background-color: #4a90e2; /* Custom color */
+color: white; /* Text color */
+border: none; /* Remove border */
+padding:5px;
+}
+/*Accordion Styling*/
+.accordion-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.4rem; /* Adjust padding as needed */
+    position: relative; /* Ensure relative positioning for the toggle button */
+}
+
+.accordion-button ul {
+    margin-top: 0.5rem;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem; /* Add some space between the inline-flex items */
+}
+
+.accordion-button li {
+    margin-bottom: 0rem;
+    display: flex;
+    align-items: left;
+}
+
+.accordion-button li.d-inline-flex {
+    flex: 1 1 calc(50% - 0.5rem); /* Adjust width with gap considered */
+    margin-right: -9.08rem; /* Reduce space between the items */
+    gap:5px;
+}
+
+.accordion-button li.d-block {
+    flex: 1 1 100%; /* Takes full width on a new line */
+    margin-top: 0.25rem; /* Optional: space above the third item */
+}
+.accordion-button .list-unstyled {
+    margin-bottom: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: white;
+    color: black;
+}
+
+/* Accordion borders and body styles */
+.accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    margin-bottom: 5px;
+}
+
+.accordion-body {
+    background-color: white;
+}
+
+/* Styling the icons */
+.accordion-body i {
+    margin-right: 0px;
+    color: #555;
+}
+
+/* Making the accordion heading more prominent */
+.accordion-header button {
+    font-size: 18px;
+}
+.accordion-button .course-title {
+    font-weight: 600; /* Optional: makes the course title bold */
+}
+.accordion-body ul {
+    padding-left: 0;
+}
+
+.accordion-body ul li {
+    padding: 0; /* Reduce padding between list items */
+}
+
+.accordion-body ul .accordion-item {
+    margin-bottom: 0; /* Reduce space between sub-accordion items */
+}
+
+.accordion-item .accordion-header {
+    padding: 0;
+}
+
+.sub-accordion-button {
+    padding:  0; /* Reduce padding for sub-accordion buttons */
+}
+
+.sub-accordion-button.collapsed {
+    background-color: transparent;
+    border:#000;
+}
+
+.accordion-body .btn-link {
+    color: #3d7ac0bb;
+    font-size: 17px;
+    display: flex;
+    align-items:left;
+    
+}
+
+.accordion-body .btn-link i {
+    margin-right: 10px;
+    font-size: 20px;
+    color:#4a91e2bb;
+    margin-left:-10px;
+}
+
+#collapseOne .project-info {
+    margin-top: 20px;
+    background-color: #ebf2fc;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 16px;
+    margin-left:0;
+}
+
+#collapseOne .project-info i {
+    margin-right: 10px;
+}
+#collapseTwo .project-info {
+    margin-top: 20px;
+    background-color: #ebf2fc;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 16px;
+}
+#collapseTwo .project-info  i{
+    margin-right: 10px;
+} 
+
+#collapseThree .project-info {
+    margin-top: 20px;
+    background-color: #ebf2fc;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 16px;
+}
+
+#collapseThree .project-info  i{
+    margin-right: 10px;
+}
+
+#collapseFour .project-info {
+    margin-top: 20px;
+    background-color: #ebf2fc;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 16px;
+}
+
+#collapseFour .project-info  i{
+    margin-right: 10px;
+}
+
+#collapseFive .project-info {
+    margin-top: 20px;
+    background-color: #ebf2fc;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 16px;
+}
+
+#collapseFive .project-info  i{
+    margin-right: 10px;
+}
+
+#collapseSix .project-info {
+    margin-top: 20px;
+    background-color: #ebf2fc;
+    padding: 10px;
+    border-radius: 0px;
+    font-size: 16px;
+}
+
+#collapseSix .project-info  i{
+    margin-right: 10px;
+}
+
+.accordion-header p{
+    font-size: 17px;
+}
+.accordion-button::after {
+    align-self: flex-start; /* This ensures the toggle icon stays at the top */
+}
+.sub-d-inline-flex i{
+    margin-right:5px;
+}
+#subCollapseOne .accordion-body ul{
+    list-style-type: disc;
+    margin-left:10px;
+}
+#subCollapseTwo .accordion-body ul{
+    list-style-type: disc;
+    margin-left:10px;
+}
+#subCollapseThree .accordion-body ul{
+    list-style-type: disc;
+    margin-left:10px;
+}
+#subCollapseFour .accordion-body ul{
+    list-style-type: disc;
+    margin-left:10px;
+}
+/* Accordion Form starts*/
+.new-overlay {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.new-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.new-form-content {
+    position: relative;
+}
+
+.new-form-heading {
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.new-form-close-btn {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.custom-btn-dwn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+/*Accordion form ends*/
+/*Accordion styling ends*/
+.custom-margin {
+    margin-top: 130px; /* or any value you prefer */
+  }
+
+/* ai tools start */
+
+#ai_tools {
+    position: relative;
+    margin: 40px auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: transparent; /* No background color needed here */
+    border-radius: 10px;
+  }
+  .background-hg {
+    background: #e7f6ff;
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px; /* To match the rounded corners of the card */
+  }
+  .section-content {
+    margin: 10px auto;
+    padding: 30px;
+    background-color: #ffffff; /* Light blue card background */
+    border-radius: 10px;
+    border: 1px solid #cae7ff;    
+  }
+  .tools-list .tool {
+    display: flex;
+    align-items: start;
+    margin-bottom: 15px;
+  }
+  .tools-list .tool .fa-circle-check {
+    font-size: 18px;
+    margin-right: 20px;
+    margin-top: 3px;
+  }
+  .tools-list .tool .description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+/* ai tools end */
+/* skills start */
+#skills_you_learn{
+    position: relative;
+    margin: 40px auto;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    background-color: transparent; /* No background color needed here */
+    border-radius: 10px;
+}
+.key-highlights-wrapper {
+    padding-top: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.highlights-container {
+    width: calc(33% - 20px); /* Adjust width to ensure equal sizes */
+    border: 1px solid #cae7ff;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.highlights-container:hover {
+    transform: translateY(-5px);
+}
+
+.highlights-child {
+    display: flex;
+    align-items: center; /* Vertically center the image and content */
+}
+
+.highlights-image {
+    margin-right: 10px;
+}
+
+.highlights-image img {
+    width: 40px;
+    height: 40px;
+}
+
+.highlights-content {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+/* skills end */
