@@ -63,3 +63,60 @@
         width: 100%; /* Stack boxes on top of each other for very small screens */
     }
 }
+@media screen and (max-width: 768px) {
+    .fee-wrapper {
+        padding: 15px;
+    }
+
+    .slab {
+        font-size: 1.5rem;
+        flex-direction: column; /* Align items vertically on smaller screens */
+        align-items: flex-start;
+    }
+
+    .base {
+        font-size: 0.9rem;
+    }
+
+    .valid-till {
+        font-size: 0.7rem;
+    }
+
+    .fees,
+    .emi,
+    .refund-message {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .rupee-icon {
+        width: 35px;
+        height: 35px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fee-wrapper {
+        padding: 10px;
+    }
+
+    .slab {
+        font-size: 1.3rem;
+    }
+
+    .fees,
+    .emi,
+    .refund-message {
+        font-size: 0.8rem;
+    }
+
+    .btn-primary {
+        font-size: 0.8rem;
+        padding: 7px 14px;
+    }
+}

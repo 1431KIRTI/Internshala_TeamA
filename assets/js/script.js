@@ -1,3 +1,30 @@
+const carousel = document.querySelector('.carousel-v1');
+const leftButton = document.querySelector('.navigate.left');
+const rightButton = document.querySelector('.navigate.right');
+
+// Scroll to the left or right by a certain number of pixels
+function scrollCarousel(direction) {
+  const scrollAmount = direction === 'left' ? -300 : 300;
+  carousel.scrollBy({
+    left: scrollAmount,
+    behavior: 'smooth'
+  });
+}
+
+// Update button visibility based on scroll position
+function updateButtons() {
+  leftButton.classList.toggle('disable', carousel.scrollLeft === 0);
+  rightButton.classList.toggle('disable', carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth);
+}
+
+// Event listeners for buttons
+leftButton.addEventListener('click', () => scrollCarousel('left'));
+rightButton.addEventListener('click', () => scrollCarousel('right'));
+carousel.addEventListener('scroll', updateButtons);
+
+// Initial button state
+updateButtons();
+
 document.addEventListener('DOMContentLoaded', () => {
     // Select all sections (modify the selector to match your classes if needed)
     const sections = document.querySelectorAll('[id]');
