@@ -136,7 +136,7 @@
     <!-- Toggler Button for small screens -->
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-</button>
+  </button>
 
     <!-- Center: Courses -->
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -386,9 +386,104 @@
             </div>
         </div>
     </div>
+    <!-- Container placed  -->
+    <div class="custom-container1">
+      <div class="row text-center">
+        <!-- Block 1 -->
+        <div class="col-md-1 mx-auto info-block1">
+          <div class="info-content">
+            <i class="far fa-clock"></i>
+            <div class="info-text1">
+              <div>Online</div>
+              <div>6 hours</div>
+            </div>
+          </div>
+        </div>
+        <!-- Block 2 -->
+        <div class="col-md-2 mx-auto info-block1">
+          <div class="info-content">
+            <i class="far fa-calendar"></i>
+            <div class="info-text1">
+              <div>ADMISSION CLOSES ON</div>
+              <div>23rd Aug <span class="special-text">Limited seats</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Block 3 -->
+        <div class="col-md-2 mx-auto info-block1">
+          <div class="info-content">
+            <i class="rupee-symbol">₹</i>
+            <div class="info-text1">
+              <div>COURSE FEE</div>
+              <div>₹37,500 <span class="stroke">42,000</span> <span class="change-color">Save ₹4,500</span><span
+                  class="special-text">Valid for today</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Block 4 -->
+        <div class="col-md-2 mx-auto info-block1">
+          <div class="info-content">
+            <i class="fa fa-bolt"></i>
+            <div class="info-text1">
+              <div>GUARANTEE</div>
+              <div>100% refund if not hired</div>
+            </div>
+          </div>
+        </div>
+        <!-- Apply Now Block -->
+        <div class="col-md-2 mx-auto apply-block">
+          <button class="btn btn-primary w-10 mt-3" data-bs-toggle="modal" data-bs-target="#applyModal">Apply Now</button>
+          <div class="applied-info1 mt-2 text-center">
+            <i class="fa fa-chart-line"> <span class="number1">42,438 already applied</span></i>
+          </div>
+        </div>
+  
+        <!-- Modal for application form -->
+        <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal header -->
+              <div class="modal-header">
+                <h5 class="modal-title" id="applyModalLabel">Application Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                <!-- Your form content here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Application Form Modal -->
+    <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="applyModalLabel">Application Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Application form content goes here -->
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-    <div id="reviews" class="slider-content">
+    <!--<div id="reviews" class="slider-content">
       <h1>Guaranteed Placement Reviews</h1>
       
   </div>
@@ -456,9 +551,9 @@
       </div>
   </div>
   
-  <script src="script.js"></script>
+  <script src="script.js"></script>-->
 
-  <div class="container mt-5">
+  <div class="container mt-5" id="container-councellor">
       <!-- Speak to a Counsellor Card -->
       <div class="card p-4 text-center">
           <p class="mb-3">Have doubts about UI/UX Design Placement Guarantee Course? Reach out to our counsellors by filling this form.</p>
@@ -637,102 +732,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
 
-    <!-- Container placed  -->
-  <div class="custom-container1">
-    <div class="row text-center">
-      <!-- Block 1 -->
-      <div class="col-md-1 mx-auto info-block1">
-        <div class="info-content">
-          <i class="far fa-clock"></i>
-          <div class="info-text1">
-            <div>Online</div>
-            <div>6 hours</div>
-          </div>
-        </div>
-      </div>
-      <!-- Block 2 -->
-      <div class="col-md-2 mx-auto info-block1">
-        <div class="info-content">
-          <i class="far fa-calendar"></i>
-          <div class="info-text1">
-            <div>ADMISSION CLOSES ON</div>
-            <div>23rd Aug <span class="special-text">Limited seats</span></div>
-          </div>
-        </div>
-      </div>
-      <!-- Block 3 -->
-      <div class="col-md-2 mx-auto info-block1">
-        <div class="info-content">
-          <i class="rupee-symbol">₹</i>
-          <div class="info-text1">
-            <div>COURSE FEE</div>
-            <div>₹37,500 <span class="stroke">42,000</span> <span class="change-color">Save ₹4,500</span><span
-                class="special-text">Valid till 23 Aug</span></div>
-          </div>
-        </div>
-      </div>
-      <!-- Block 4 -->
-      <div class="col-md-2 mx-auto info-block1">
-        <div class="info-content">
-          <i class="fa fa-bolt"></i>
-          <div class="info-text1">
-            <div>GUARANTEE</div>
-            <div>100% refund if not hired</div>
-          </div>
-        </div>
-      </div>
-      <!-- Apply Now Block -->
-      <div class="col-md-2 mx-auto apply-block">
-        <button class="btn btn-primary w-10 mt-3" data-bs-toggle="modal" data-bs-target="#applyModal">Apply Now</button>
-        <div class="applied-info1 mt-2 text-center">
-          <i class="fa fa-chart-line"> <span class="number1">42,438 already applied</span></i>
-        </div>
-      </div>
 
-      <!-- Modal for application form -->
-      <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <!-- Modal header -->
-            <div class="modal-header">
-              <h5 class="modal-title" id="applyModalLabel">Application Form</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <!-- Modal body -->
-            <div class="modal-body">
-              <!-- Your form content here -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Application Form Modal -->
-  <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="applyModalLabel">Application Form</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Application form content goes here -->
-          <form>
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" required>
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="email" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
     <div id="career options" class="container custom-margin">

@@ -34,6 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.querySelector('.navbar-toggler').addEventListener('click', function() {
+    const navBar = document.getElementById('navbarContent');
+    if (navBar.classList.contains('show')) {
+        this.setAttribute('aria-expanded', 'false');
+    } else {
+        this.setAttribute('aria-expanded', 'true');
+    }
+});
 
 
 

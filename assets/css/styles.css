@@ -484,17 +484,30 @@ h6 {
     margin-top: 5px; /* Default margin for larger screens */
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     .custom-container1 {
-        margin-top: 30px; /* Adjust margin for smaller screens */
+        margin-top: 1px; /* Adjust margin for smaller screens */
+    }
+    .custom-container1 .apply-block{
+        display: none;
+    }
+    .custom-footer-container{
+        width: 100%;
+    }
+    .footer{
+        margin-right: 100%;
+    }
+    #container-councellor .card{
+        margin-top: 350px;
     }
 }
 
 @media (max-width: 768px) {
-    .custom-btn1{
-        margin-top: 30px;
-        font-size: x-small;
-        display:flow-root;
+    .header-section img{
+        height: 10%;
+    }
+    .header-section .button-group{
+        display: none;
     }
     .header-section .text-section{
         align-items: left;
@@ -503,19 +516,30 @@ h6 {
     .custom-container1 {
         margin-top: 50px; /* Further adjust for extra small screens */
     }
+    .custom-footer-container{
+        width: 100%;
+    }
+    .footer{
+        margin-right: 100%;
+    }
 }
 
 @media (max-width: 576px) {
-    .custom-btn1{
-        margin-top: 30px;
-        font-size: x-small;
-        display:grid;
+    .header-section img{
+        height: 7%;
+    }
+    .container-fluid h1{
+        margin-right: 50px;
+        text-align: center;
+    }
+    .container-fluid h3{
+        margin-right: 50px;
+        text-align: center;
     }
     .header-section .text-section{
         align-items: left;
         margin-bottom: 50px;
     }
-    
     .custom-container1 {
         margin-top: 220px; /* Additional spacing for very small screens */
     }
@@ -525,26 +549,38 @@ h6 {
     .special-text{
         align-self: center;
     }
+    #container-councellor{
+        padding-top: 25%;
+    }
 }
 
 @media (max-width: 320px) {
+    .header-section img{
+        height: 10%;
+    }
+    .container-fluid h1{
+        margin-right: 50px;
+        text-align: center;
+    }
+    .container-fluid h3{
+        margin-right: 50px;
+        text-align: center;
+    }
     .header-section .text-section{
         align-items: left;
         margin-bottom: 35px;
     }
-    .custom-btn1{
-        margin-top: 10px;
-        font-size: x-small;
-        display:grid;
-    }
     .custom-container1 {
-        margin-top: 330px; /* Spacing for the smallest screens */
+        margin-top: 180px; /* Spacing for the smallest screens */
     }
     .info-block1{
         text-align: center;
     }
     .special-text{
         align-self: center;
+    }
+    #container-councellor{
+        padding-top: 40%;
     }
     .custom-footer-container{
         width: 100%;
@@ -1170,7 +1206,9 @@ padding:5px;
       width: 250px; /* Reduces the card width on smaller screens */
     }
   }
-  
+  #container-councellor .card{
+    margin-top: 150px;
+  }
   .navigator {
     display: flex;
     justify-content: space-between;
