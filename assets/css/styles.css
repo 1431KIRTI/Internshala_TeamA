@@ -983,6 +983,10 @@ padding:5px;
     list-style-type: disc;
     margin-left:10px;
 }
+#courseAccordion{
+    max-width:79%;
+}
+
 /* Accordion Form starts*/
 .new-overlay {
     display: none;
