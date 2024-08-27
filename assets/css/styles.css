@@ -254,6 +254,7 @@ body.modal-open {
     padding: 95px 0;
     color: white;
     position: relative;
+    max-width:100%;
 }
 .text-section {
     padding: 20px;
@@ -448,11 +449,11 @@ h6 {
     margin-left: 10px;
 }
 
-ul {
+.custom-footer-container ul {
     padding-left: 0;/* Removes default padding */
 }
 
-ul li {
+.custom-footer-container ul li {
     list-style-type: none;/* Removes bullet points from list items */
     text-align: left;/* Align text to the left */
     white-space: nowrap;/* Prevent text from wrapping */
@@ -1132,6 +1133,61 @@ padding:5px;
 }
 /* skills end */
 /* experts start */
+/* General container styles */
+.carousel-v1 {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Ensures that each card snaps into place */
+  }
+  
+  .cards-v1 {
+    display: flex;
+    flex-shrink: 0; /* Prevents cards from shrinking */
+    scroll-snap-align: start; /* Aligns each card to the start of the viewport */
+    gap: 20px; /* Adds space between cards */
+  }
+  
+  .card-v1 {
+    flex: 0 0 auto; /* Keeps each card's size fixed */
+    width: 300px; /* Fixed width for each card */
+    border: 1px solid #ddd; /* Adds a border to the cards */
+    border-radius: 8px; /* Rounds the card corners */
+    padding: 15px; /* Adds padding inside each card */
+    background-color: white; /* Background color for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for a lifted effect */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cards-v1 {
+      gap: 10px; /* Reduces the gap between cards on smaller screens */
+    }
+  
+    .card-v1 {
+      width: 250px; /* Reduces the card width on smaller screens */
+    }
+  }
+  
+  .navigator {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute; /* Positions the navigator absolutely within the carousel */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  button.navigate {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  button.navigate.disable {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
 .section-heading {
     font-size: 1.8rem;
     font-weight: bold;
@@ -1146,13 +1202,13 @@ padding:5px;
     border: 1px solid #ddd;
     border-radius: 15px;
     padding: 20px;
-    width: 350px; /* Fixed width for all cards */
-    height: 186px; /* Fixed height for all cards */
+    width: 350px;
+    height: 186px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align content to the top */
-    position: relative; /* Make the card a positioned element */
+    justify-content: flex-start;
+    position: relative; 
 }
 .faculty-details {
     display: flex;
@@ -1176,19 +1232,18 @@ padding:5px;
     color: #666;
 }
 .separator {
-    width: 100%;
+    width: 90%;
     border-top: 1px solid #ddd;
-    position: absolute; /* Position relative to the card */
-    bottom: 70px; /* Fixed distance from the bottom of the card */
-    left: 0;
+    position: absolute;
+    bottom: 70px; 
 }
 .companies {
     display: flex;
     gap: 15px;
     align-items: center;
     justify-content: left;
-    position: absolute; /* Position relative to the card */
-    bottom: 20px; /* Fixed distance from the bottom of the card */
+    position: absolute;
+    bottom: 20px;
     left: 20px;
     right: 0;
 }
@@ -1198,12 +1253,14 @@ padding:5px;
 /* experts end */
 /* course start */
 .program-fee {
-    background-color: #f4faff; /* Light blue background */
+    background-color: #f4faff;
     padding: 40px 0;
 }
 
+/* Responsive card wrapper */
 .fee-wrapper {
-    width: 500px;
+    width: 100%;
+    max-width: 500px; /* Maximum width for larger screens */
     background-color: white;
     border-radius: 15px;
     padding: 20px;
@@ -1211,20 +1268,26 @@ padding:5px;
     display: inline-block;
     position: relative;
     text-align: left;
+    margin: 0 auto; /* Center the card on the page */
 }
 
+/* Responsive font size adjustments */
 .fees {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
+/* Price slab styling */
 .slab {
     font-size: 2rem;
     font-weight: bold;
     color: #333;
+    align-items: center;
+    justify-content: space-between;
 }
 
+/* Base price styling */
 .base {
     text-decoration: line-through;
     color: #888;
@@ -1232,38 +1295,46 @@ padding:5px;
     margin-left: 10px;
 }
 
+/* Valid till date styling */
 .valid-till {
-    background-color: #ffd966;
-    color: #333;
+    background-color: #fffefc;
+    border: 1px solid #FFA500;
+    color: #8B4513;
     padding: 2px 8px;
-    border-radius: 5px;
+    border-radius: 4px;
     font-size: 0.8rem;
     margin-left: 10px;
+    display: inline-block;
 }
 
+/* EMI options styling */
 .emi {
     font-size: 1rem;
     color: #333;
     margin-top: 15px;
 }
 
+/* EMI button styling */
 .emi-btn {
     color: #007bff;
     text-decoration: underline;
     cursor: pointer;
 }
 
+/* Highlighted text styling */
 .highlight {
     font-weight: bold;
     color: #333;
 }
 
+/* Refund message styling */
 .refund-message {
     font-size: 1rem;
     color: #333;
     margin-top: 15px;
 }
 
+/* Apply button styling */
 .btn-primary {
     background-color: #007bff;
     border: none;
@@ -1275,14 +1346,62 @@ padding:5px;
     cursor: pointer;
 }
 
+/* Rupee icon styling */
 .rupee-icon {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: #e1efff;
     padding: 10px;
 }
 /* course end */
+
+/* FAQ starts */
+/* Full-width background for the FAQ section with reduced top margin */
+.faq-section-background {
+    width: 100vw; /* Full viewport width */
+    background-color: white;
+    padding: 20px 0; /* Reduced padding top and bottom */
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  /* White background for the container with content */
+  .container.faq-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom:-50px; /* Adjust as needed */
+  }
+  
+  /* FAQ nav tabs styling */
+  .faq-nav-tabs {
+    border-bottom: 1px solid black; /* Black line after the nav */
+  }
+  
+  .faq-nav-tabs .faq-nav-link {
+    background-color: white;
+    font-size: 18px;
+    color: #000; /* Default text color */
+    border: none;
+  }
+  
+  .faq-nav-tabs .faq-nav-link.active {
+    border-bottom: 3px solid blue; /* Blue underline for active tab */
+    color: blue; /* Make text blue when active */
+  }
+  
+  /* Smaller font size for FAQ accordion button text */
+  .faq-accordion-button {
+    font-size: 12px;
+    color: #000;
+  }
+  
+  .faq-accordion-button:not(.collapsed) {
+    background-color: #f8f9fa;
+    color: #000;
+  } 
+  /* FAQ ENDS*/
+  
