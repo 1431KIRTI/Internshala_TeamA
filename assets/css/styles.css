@@ -1358,3 +1358,50 @@ padding:5px;
     padding: 10px;
 }
 /* course end */
+
+/* FAQ starts */
+/* Full-width background for the FAQ section with reduced top margin */
+.faq-section-background {
+    width: 100vw; /* Full viewport width */
+    background-color: white;
+    padding: 20px 0; /* Reduced padding top and bottom */
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  /* White background for the container with content */
+  .container.faq-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom:-50px; /* Adjust as needed */
+  }
+  
+  /* FAQ nav tabs styling */
+  .faq-nav-tabs {
+    border-bottom: 1px solid black; /* Black line after the nav */
+  }
+  
+  .faq-nav-tabs .faq-nav-link {
+    background-color: white;
+    font-size: 18px;
+    color: #000; /* Default text color */
+    border: none;
+  }
+  
+  .faq-nav-tabs .faq-nav-link.active {
+    border-bottom: 3px solid blue; /* Blue underline for active tab */
+    color: blue; /* Make text blue when active */
+  }
+  
+  /* Smaller font size for FAQ accordion button text */
+  .faq-accordion-button {
+    font-size: 12px;
+    color: #000;
+  }
+  
+  .faq-accordion-button:not(.collapsed) {
+    background-color: #f8f9fa;
+    color: #000;
+  } 
+  /* FAQ ENDS*/
+  
