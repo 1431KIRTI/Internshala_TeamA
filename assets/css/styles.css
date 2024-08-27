@@ -254,6 +254,7 @@ body.modal-open {
     padding: 95px 0;
     color: white;
     position: relative;
+    max-width:100%;
 }
 .text-section {
     padding: 20px;
@@ -448,11 +449,11 @@ h6 {
     margin-left: 10px;
 }
 
-ul {
+.custom-footer-container ul {
     padding-left: 0;/* Removes default padding */
 }
 
-ul li {
+.custom-footer-container ul li {
     list-style-type: none;/* Removes bullet points from list items */
     text-align: left;/* Align text to the left */
     white-space: nowrap;/* Prevent text from wrapping */
