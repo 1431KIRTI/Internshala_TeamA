@@ -63,3 +63,29 @@
         width: 100%; /* Stack boxes on top of each other for very small screens */
     }
 }
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .myproject-card {
+        flex: 0 0 30%;
+        max-width: 48%;
+        margin: 0 1%;
+    }
+}
+
+@media (max-width: 768px) {
+    .myproject-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .myproject-cards {
+        width: 100%;
+    }
+}
+@media (max-width: 568px) {
+    .mt-5 {
+        margin-top: 18rem !important;
+    }
+}

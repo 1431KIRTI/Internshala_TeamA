@@ -146,3 +146,34 @@ document.getElementById('overlay').style.display = 'none'; // Hide the overlay
                        yearSelect.appendChild(option);
                    }
    
+
+    const cards = document.querySelector('.myproject-cards');
+    const bullets = document.querySelectorAll('.myproject-bullet');
+    let index = 0;
+
+    document.querySelector('.myproject-navigate.left').addEventListener('click', () => {
+        if (index > 0) {
+            index--;
+            updateCarousel();
+        }
+    });
+
+    document.querySelector('.myproject-navigate.right').addEventListener('click', () => {
+        if (index < bullets.length - 1) {
+            index++;
+            updateCarousel();
+        }
+    });
+
+    bullets.forEach((bullet, i) => {
+        bullet.addEventListener('click', () => {
+            index = i;
+            updateCarousel();
+        });
+    });
+
+    function updateCarousel() {
+        cards.style.transform = `translateX(-${index * 100 / 3}%)`;
+        bullets.forEach(bullet => bullet.classList.remove('active'));
+        bullets[index].classList.add('active');
+    }
