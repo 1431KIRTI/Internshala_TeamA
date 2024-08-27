@@ -3,7 +3,9 @@
 body {
     background-color: white;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 .modal-dialog {
     max-width: 500px; /* Adjust as needed */
     margin: auto;
@@ -22,11 +24,19 @@ body {
     left: 0;
     right: 0;
     display: none;
-    transition: top 0.3s;
-    /* Smooth transition when showing/hiding */
-    z-index: 1000;
-    /* Ensure navbar is above other content */
+    transition: top 0.3s;/* Smooth transition when showing/hiding */
+    z-index: 1030;/* Ensure navbar is above other content */
+    width: 100%;
 }
+/* Prevent body shift when modal is open */
+body.modal-open {
+    padding-right: 0 !important;
+  }
+  
+  /* Ensure modal backdrop is behind the navbar */
+  .modal-backdrop {
+    z-index: 1020;
+  }
 
 /* Class to show the navbar */
 .navbar-fixed.show {
@@ -63,6 +73,10 @@ body {
 
 .navbar-nav .nav-link:hover {
     color: #007bff;
+}
+.container-fluid {
+    max-width: 1400px; /* Adjust this width as needed */
+    margin: auto; /* Center the container */
 }
 .navbar {
     background-color: #fff; /* Adjust background color if needed */
@@ -129,18 +143,15 @@ body {
 
 /* Additional styling to enhance appearance */
 .sub-menu li a:hover {
-    color: #007bff;
-    /* color on hover */
+    color: #007bff;/* color on hover */
 }
 
 /* Basic styling for dropdown items */
 .col-3 .dropdown-item {
     position: relative;
     display: block;
-    width: calc(100% + 25px);
-    /* Slightly larger width for the hover effect */
-    padding: 10px 20px 10px 30px;
-    /* Add padding for spacing */
+    width: calc(100% + 25px);/* Slightly larger width for the hover effect */
+    padding: 10px 20px 10px 30px;/* Add padding for spacing */
     color: #000;
     background-color: transparent;
     text-align: left;
@@ -155,10 +166,8 @@ body {
 
 /* Hover effect with dark sky blue on the left and light sky blue on the remaining part */
 .col-3 .dropdown-item:hover {
-    background: linear-gradient(to right, #87CEEB 30%, #B0E2FF 70%);
-    /* Dark sky blue (#87CEEB) and light sky blue (#B0E2FF) */
-    color: black;
-    /* White text */
+    background: linear-gradient(to right, #87CEEB 30%, #B0E2FF 70%);/* Dark sky blue (#87CEEB) and light sky blue (#B0E2FF) */
+    color: black;/* White text */
 }
 
 /* Add the > sign on the right side */
@@ -166,8 +175,7 @@ body {
     content: '>';
     position: absolute;
     right: 10px;
-    color: black;
-    /* White color for the arrow */
+    color: black;/* White color for the arrow */
     font-weight: bold;
 }
 
@@ -178,46 +186,37 @@ body {
 
 /* Styles for the entire Placement Guarantee Courses dropdown menu */
 #placementCoursesDropdown+.dropdown-menu.mega-menu {
-    width: 500px;
-    /* Adjust the width of the dropdown menu */
+    width: 500px;/* Adjust the width of the dropdown menu */
     min-width: auto;
-    overflow-y: auto;
-    /* Allows scrolling if content exceeds max height */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    /* Optional: Adds shadow for depth */
+    overflow-y: auto;/* Allows scrolling if content exceeds max height */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);/* Optional: Adds shadow for depth */
 }
 
 /* Specific styles for Placement Guarantee Courses dropdown */
 #placementCoursesDropdown+.dropdown-menu.mega-menu li a.dropdown-item {
     font-size: large;
     display: block;
-    transition: all 0.3s ease;
-    /* Smooth transition for hover effect */
+    transition: all 0.3s ease;/* Smooth transition for hover effect */
 }
 
 /* Specific styles for Placement Guarantee Courses dropdown */
 #placementCoursesDropdown+.dropdown-menu.mega-menu li a.dropdown-item:hover {
-    background: linear-gradient(to right, #B0E2FF 30%, #87CEEB 70%);
-    /* Dark sky blue (#87CEEB) and light sky blue (#B0E2FF) */
-    color: #007bff;
-    /* Change text color on hover */
+    background: linear-gradient(to right, #B0E2FF 30%, #87CEEB 70%);/* Dark sky blue (#87CEEB) and light sky blue (#B0E2FF) */
+    color: #007bff;/* Change text color on hover */
     display: block;
 }
 
 #placementCoursesDropdown+.dropdown-menu.mega-menu li a.dropdown-item {
     width: 100%;
     display: block;
-    transition: all 0.3s ease;
-    /* Smooth transition for hover effect */
+    transition: all 0.3s ease;/* Smooth transition for hover effect */
 }
 
 .dropdown-icon {
-    height: 16px;
-    /* Make the icon smaller */
+    height: 16px;/* Make the icon smaller */
     width: 16px;
     margin-right: 10px;
-    object-fit: contain;
-    /* Ensure the logo doesn't get distorted */
+    object-fit: contain;/* Ensure the logo doesn't get distorted */
 }
 
 /* Badge Styling */
@@ -255,6 +254,7 @@ body {
     padding: 95px 0;
     color: white;
     position: relative;
+    max-width:100%;
 }
 .text-section {
     padding: 20px;
@@ -350,23 +350,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: left;
-    /* Ensure text is aligned to the left */
+    text-align: left;/* Ensure text is aligned to the left */
     padding: 10px;
 }
 
 .info-content {
     display: flex;
-    align-items: center;
-    /* Align items vertically centered */
+    align-items: center;/* Align items vertically centered */
 }
 
 .info-block1 i {
-    font-size: 24px;
-    /* Adjust icon size as needed */
+    font-size: 24px;/* Adjust icon size as needed */
     color: #007bff;
-    margin-right: 10px;
-    /* Space between icon and text */
+    margin-right: 10px;/* Space between icon and text */
 }
 
 .info-text1 {
@@ -376,8 +372,7 @@ body {
 }
 
 .info-text1 div {
-    margin-bottom: 5px;
-    /* Space between lines of text */
+    margin-bottom: 5px;/* Space between lines of text */
 }
 
 
@@ -387,18 +382,12 @@ body {
 }
 
 .special-text {
-    background-color: #fffefc;
-    /* Light orange background */
-    border: 1px solid #FFA500;
-    /* Orange border */
-    color: #8B4513;
-    /* Brown text */
-    padding: 1px 6px;
-    /* Padding inside the box */
-    border-radius: 4px;
-    /* Rounded corners */
-    display: inline-block;
-    /* Makes the box fit the text */
+    background-color: #fffefc;/* Light orange background */
+    border: 1px solid #FFA500;/* Orange border */
+    color: #8B4513;/* Brown text */
+    padding: 1px 6px;/* Padding inside the box */
+    border-radius: 4px;/* Rounded corners */
+    display: inline-block;/* Makes the box fit the text */
 }
 
 .stroke {
@@ -427,68 +416,51 @@ body {
 }
 
 .custom-footer-container {
-    background-color: #2b2828;
-    /* Black background for the entire footer container */
-    color: #ffffff;
-    /* White text color */
-    padding: 20px 0;
-    /* Padding around the footer container */
+    background-color: #2b2828;/* Black background for the entire footer container */
+    color: #ffffff;/* White text color */
+    padding: 20px 0;/* Padding around the footer container */
     margin-top: 100px;
     font-size: 15px;
 }
 
 .footer {
-    padding: 20px 0;
-    /* Padding within the footer */
-    margin-left: 40px;
-    /* Adds left margin to the buttons */
+    padding: 20px 0;/* Padding within the footer */
+    margin-left: 40px;/* Adds left margin to the buttons */
 }
 
 .upper-section {
-    height: 80%;
-    /* Upper section takes up 80% of the footer height */
+    height: 80%;/* Upper section takes up 80% of the footer height */
 }
 
 .lower-section {
-    height: 20%;
-    /* Lower section takes up 20% of the footer height */
+    height: 20%;/* Lower section takes up 20% of the footer height */
     display: flex;
-    align-items: center;
-    /* Centers the content vertically */
+    align-items: center;/* Centers the content vertically */
 }
 
 .white-line {
-    border-top: 1px solid #ffffff;
-    /* Thin white line */
-    margin: 10px 0;
-    /* Space around the line */
+    border-top: 1px solid #ffffff;/* Thin white line */
+    margin: 10px 0;/* Space around the line */
 }
 
 h6 {
-    font-weight: bold;
-    /* Makes section headings bold */
-    margin-bottom: 10px;
-    /* Adds space below the headings */
+    font-weight: bold;/* Makes section headings bold */
+    margin-bottom: 10px;/* Adds space below the headings */
     margin-left: 10px;
 }
 
-ul {
-    padding-left: 0;
-    /* Removes default padding */
+.custom-footer-container ul {
+    padding-left: 0;/* Removes default padding */
 }
 
-ul li {
-    list-style-type: none;
-    /* Removes bullet points from list items */
-    text-align: left;
-    /* Align text to the left */
-    white-space: nowrap;
-    /* Prevent text from wrapping */
+.custom-footer-container ul li {
+    list-style-type: none;/* Removes bullet points from list items */
+    text-align: left;/* Align text to the left */
+    white-space: nowrap;/* Prevent text from wrapping */
 }
 
 .lower-section div {
-    color: #ffffff;
-    /* Ensures text color is white in the lower section */
+    color: #ffffff;/* Ensures text color is white in the lower section */
 }
 
 .btn-link {
@@ -497,19 +469,91 @@ ul li {
 }
 
 .btn-link i {
-    font-size: 1.5em;
-    /* Adjust icon size */
+    font-size: 1.5em;/* Adjust icon size */
 }
 
 .custom-footer-container .social-icons li {
-    margin-right: -10px;
-    /* Adjust this value to reduce spacing */
+    margin-right: -10px;/* Adjust this value to reduce spacing */
 }
 
 .custom-footer-container .social-icons li:last-child {
-    margin-right: 0;
-    /* Remove margin after the last icon */
+    margin-right: 0;/* Remove margin after the last icon */
 }
+
+.custom-container1 {
+    margin-top: 5px; /* Default margin for larger screens */
+}
+
+@media (max-width: 991px) {
+    .custom-container1 {
+        margin-top: 30px; /* Adjust margin for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-btn1{
+        margin-top: 30px;
+        font-size: x-small;
+        display:flow-root;
+    }
+    .header-section .text-section{
+        align-items: left;
+        margin-bottom: 50px;
+    }
+    .custom-container1 {
+        margin-top: 50px; /* Further adjust for extra small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-btn1{
+        margin-top: 30px;
+        font-size: x-small;
+        display:grid;
+    }
+    .header-section .text-section{
+        align-items: left;
+        margin-bottom: 50px;
+    }
+    
+    .custom-container1 {
+        margin-top: 220px; /* Additional spacing for very small screens */
+    }
+    .info-block1{
+        text-align: center;
+    }
+    .special-text{
+        align-self: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .header-section .text-section{
+        align-items: left;
+        margin-bottom: 35px;
+    }
+    .custom-btn1{
+        margin-top: 10px;
+        font-size: x-small;
+        display:grid;
+    }
+    .custom-container1 {
+        margin-top: 330px; /* Spacing for the smallest screens */
+    }
+    .info-block1{
+        text-align: center;
+    }
+    .special-text{
+        align-self: center;
+    }
+    .custom-footer-container{
+        width: 100%;
+    }
+    .footer{
+        margin-left: -10px;
+    }
+}
+
 
 
 
@@ -1089,6 +1133,61 @@ padding:5px;
 }
 /* skills end */
 /* experts start */
+/* General container styles */
+.carousel-v1 {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Ensures that each card snaps into place */
+  }
+  
+  .cards-v1 {
+    display: flex;
+    flex-shrink: 0; /* Prevents cards from shrinking */
+    scroll-snap-align: start; /* Aligns each card to the start of the viewport */
+    gap: 20px; /* Adds space between cards */
+  }
+  
+  .card-v1 {
+    flex: 0 0 auto; /* Keeps each card's size fixed */
+    width: 300px; /* Fixed width for each card */
+    border: 1px solid #ddd; /* Adds a border to the cards */
+    border-radius: 8px; /* Rounds the card corners */
+    padding: 15px; /* Adds padding inside each card */
+    background-color: white; /* Background color for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for a lifted effect */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .cards-v1 {
+      gap: 10px; /* Reduces the gap between cards on smaller screens */
+    }
+  
+    .card-v1 {
+      width: 250px; /* Reduces the card width on smaller screens */
+    }
+  }
+  
+  .navigator {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute; /* Positions the navigator absolutely within the carousel */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  button.navigate {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  button.navigate.disable {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
 .section-heading {
     font-size: 1.8rem;
     font-weight: bold;
@@ -1103,13 +1202,13 @@ padding:5px;
     border: 1px solid #ddd;
     border-radius: 15px;
     padding: 20px;
-    width: 350px; /* Fixed width for all cards */
-    height: 186px; /* Fixed height for all cards */
+    width: 350px;
+    height: 186px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Align content to the top */
-    position: relative; /* Make the card a positioned element */
+    justify-content: flex-start;
+    position: relative; 
 }
 .faculty-details {
     display: flex;
@@ -1133,19 +1232,18 @@ padding:5px;
     color: #666;
 }
 .separator {
-    width: 100%;
+    width: 90%;
     border-top: 1px solid #ddd;
-    position: absolute; /* Position relative to the card */
-    bottom: 70px; /* Fixed distance from the bottom of the card */
-    left: 0;
+    position: absolute;
+    bottom: 70px; 
 }
 .companies {
     display: flex;
     gap: 15px;
     align-items: center;
     justify-content: left;
-    position: absolute; /* Position relative to the card */
-    bottom: 20px; /* Fixed distance from the bottom of the card */
+    position: absolute;
+    bottom: 20px;
     left: 20px;
     right: 0;
 }
@@ -1155,12 +1253,14 @@ padding:5px;
 /* experts end */
 /* course start */
 .program-fee {
-    background-color: #f4faff; /* Light blue background */
+    background-color: #f4faff;
     padding: 40px 0;
 }
 
+/* Responsive card wrapper */
 .fee-wrapper {
-    width: 500px;
+    width: 100%;
+    max-width: 500px; /* Maximum width for larger screens */
     background-color: white;
     border-radius: 15px;
     padding: 20px;
@@ -1168,20 +1268,26 @@ padding:5px;
     display: inline-block;
     position: relative;
     text-align: left;
+    margin: 0 auto; /* Center the card on the page */
 }
 
+/* Responsive font size adjustments */
 .fees {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
+/* Price slab styling */
 .slab {
     font-size: 2rem;
     font-weight: bold;
     color: #333;
+    align-items: center;
+    justify-content: space-between;
 }
 
+/* Base price styling */
 .base {
     text-decoration: line-through;
     color: #888;
@@ -1189,38 +1295,46 @@ padding:5px;
     margin-left: 10px;
 }
 
+/* Valid till date styling */
 .valid-till {
-    background-color: #ffd966;
-    color: #333;
+    background-color: #fffefc;
+    border: 1px solid #FFA500;
+    color: #8B4513;
     padding: 2px 8px;
-    border-radius: 5px;
+    border-radius: 4px;
     font-size: 0.8rem;
     margin-left: 10px;
+    display: inline-block;
 }
 
+/* EMI options styling */
 .emi {
     font-size: 1rem;
     color: #333;
     margin-top: 15px;
 }
 
+/* EMI button styling */
 .emi-btn {
     color: #007bff;
     text-decoration: underline;
     cursor: pointer;
 }
 
+/* Highlighted text styling */
 .highlight {
     font-weight: bold;
     color: #333;
 }
 
+/* Refund message styling */
 .refund-message {
     font-size: 1rem;
     color: #333;
     margin-top: 15px;
 }
 
+/* Apply button styling */
 .btn-primary {
     background-color: #007bff;
     border: none;
@@ -1232,14 +1346,62 @@ padding:5px;
     cursor: pointer;
 }
 
+/* Rupee icon styling */
 .rupee-icon {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: #e1efff;
     padding: 10px;
 }
 /* course end */
+
+/* FAQ starts */
+/* Full-width background for the FAQ section with reduced top margin */
+.faq-section-background {
+    width: 100vw; /* Full viewport width */
+    background-color: white;
+    padding: 20px 0; /* Reduced padding top and bottom */
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  /* White background for the container with content */
+  .container.faq-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom:-50px; /* Adjust as needed */
+  }
+  
+  /* FAQ nav tabs styling */
+  .faq-nav-tabs {
+    border-bottom: 1px solid black; /* Black line after the nav */
+  }
+  
+  .faq-nav-tabs .faq-nav-link {
+    background-color: white;
+    font-size: 18px;
+    color: #000; /* Default text color */
+    border: none;
+  }
+  
+  .faq-nav-tabs .faq-nav-link.active {
+    border-bottom: 3px solid blue; /* Blue underline for active tab */
+    color: blue; /* Make text blue when active */
+  }
+  
+  /* Smaller font size for FAQ accordion button text */
+  .faq-accordion-button {
+    font-size: 12px;
+    color: #000;
+  }
+  
+  .faq-accordion-button:not(.collapsed) {
+    background-color: #f8f9fa;
+    color: #000;
+  } 
+  /* FAQ ENDS*/
+  
