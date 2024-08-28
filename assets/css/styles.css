@@ -14,7 +14,14 @@ html {
   .modal-content {
     text-align: center; /* Center the text inside the modal */
   }
-  
+#gprheading {
+    text-align: left;
+
+}
+#tch{
+    font-weight:bold;
+    font-size:32px;
+}
 
 
 /* Hide the navbar by default */
