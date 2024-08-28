@@ -85,7 +85,7 @@
     }
 }
 @media (max-width: 591px) {
-    .mt-5 {
+    #reviews {
         margin-top: 18rem !important;
     }
 }

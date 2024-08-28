@@ -328,15 +328,7 @@ body.modal-open {
     margin: 0 auto; /* Centering the content */
 }
 @media (max-width: 768px) {
-    .text-section h1, .text-section h3 {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .button-group {
-        flex-direction: column;
-        align-items: center;
-    }
+    
 }
 
 .custom-container1 {
@@ -521,6 +513,17 @@ h6 {
     .custom-container1 {
         margin-top: 50px; /* Further adjust for extra small screens */
     }
+    .text-section h1, .text-section h3 {
+        margin-left: 0;
+        text-align: center;
+    }
+    #reviews{
+        padding-top: 10%;
+    }
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
     .custom-footer-container{
         width: 100%;
     }
@@ -554,8 +557,8 @@ h6 {
     .special-text{
         align-self: center;
     }
-    #container-councellor{
-        padding-top: 25%;
+    #reviews{
+        padding-top: 1%;
     }
 }
 
@@ -584,8 +587,8 @@ h6 {
     .special-text{
         align-self: center;
     }
-    #container-councellor{
-        padding-top: 40%;
+    .myproject-card{
+        height: 30rem;
     }
     .custom-footer-container{
         width: 100%;
