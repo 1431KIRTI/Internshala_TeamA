@@ -327,9 +327,6 @@ body.modal-open {
     max-width: 1400px; /* Max width for centering */
     margin: 0 auto; /* Centering the content */
 }
-@media (max-width: 768px) {
-    
-}
 
 .custom-container1 {
     position: absolute;
@@ -500,6 +497,20 @@ h6 {
 }
 
 @media (max-width: 768px) {
+    .dropdown-menu .row{
+        max-width: 100%;
+        display: inline-block;
+    }
+    .col-3 .dropdown-item:hover {
+        background: white;
+        color: rgb(53, 71, 235);/* White text */
+    }
+    .col-3 .dropdown-item:hover::after {
+        content: none;
+    }
+    .btn-outline-primary{
+        display: none;
+    }
     .header-section img{
         height: 10%;
     }
@@ -563,6 +574,17 @@ h6 {
 }
 
 @media (max-width: 320px) {
+    .dropdown-menu .row{
+        max-width: 100%;
+        display: inline-block;
+    }
+    .col-3 .dropdown-item:hover {
+        background: white;
+        color: rgb(53, 71, 235);/* White text */
+    }
+    .col-3 .dropdown-item:hover::after {
+        content: none;
+    }
     .header-section img{
         height: 10%;
     }
